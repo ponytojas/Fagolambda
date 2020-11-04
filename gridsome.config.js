@@ -15,6 +15,9 @@ module.exports = {
         baseUrl: process.env.WORDPRESS_URL, // required
         typeName: 'WordPress', // GraphQL schema name (Optional)
       }
+    },
+    {
+      use: "gridsome-plugin-tailwindcss"
     }
   ]
 }

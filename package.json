@@ -10,10 +10,10 @@
     "@gridsome/source-wordpress": "^0.5.3",
     "@mdi/font": "^5.8.55",
     "gridsome": "^0.7.21",
-    "sharp": "^0.26.2",
-    "tailwindcss": "^1.9.6"
+    "vue-infinite-loading": "^2.4.5"
   },
   "devDependencies": {
+    "eslint": "latest",
     "gridsome-plugin-tailwindcss": "^3.0.1"
   }
 }
