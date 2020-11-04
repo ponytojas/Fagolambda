@@ -1,0 +1,17 @@
+{
+  "name": "fagolambda",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "@gridsome/source-wordpress": "^0.5.3",
+    "gridsome": "^0.7.21",
+    "sharp": "^0.26.2"
+  },
+  "devDependencies": {
+    "gridsome-plugin-tailwindcss": "^3.0.1"
+  }
+}
