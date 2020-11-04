@@ -8,8 +8,10 @@
   },
   "dependencies": {
     "@gridsome/source-wordpress": "^0.5.3",
+    "@mdi/font": "^5.8.55",
     "gridsome": "^0.7.21",
-    "sharp": "^0.26.2"
+    "sharp": "^0.26.2",
+    "tailwindcss": "^1.9.6"
   },
   "devDependencies": {
     "gridsome-plugin-tailwindcss": "^3.0.1"
