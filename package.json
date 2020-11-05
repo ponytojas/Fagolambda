@@ -8,9 +8,10 @@
   },
   "dependencies": {
     "@gridsome/source-wordpress": "^0.5.3",
-    "gridsome": "^0.7.0",
+    "gridsome": "^0.7.22",
     "node-sass": "^5.0.0",
-    "postcss": "^7.0.35",
+    "postcss": "^8.1.6",
+    "sass-loader": "^10.0.5",
     "tailwindcss": "^1.9.6"
   }
 }
