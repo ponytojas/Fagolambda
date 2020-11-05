@@ -1,12 +1,19 @@
 <template>
   <Layout>
-    <h1>Welcome to my blog :)</h1>
-    <ul class="post-list">
-      <li v-for="{ node } in $page.allWordPressPost.edges" :key="node.id">
-        <Post :post="node" />
-      </li>
-    </ul>
-    <Pager :info="$page.allWordPressPost.pageInfo"/>
+    <div class="side">
+      <p class="text-center text-6xl font-thin mt-8">Artículos</p>
+    <div class="flex align-start flex-row flex-wrap mb-8">
+      <div
+        v-for="{ node } in $page.allWordPressPost.edges"
+        :key="node.id"
+        class=" w-full h-auto md:w-1/2 px-2"
+      >
+        <div class="flex justify-center flex-row min-h-screen">
+          <PostCard :post="node"></PostCard>
+        </div>
+      </div>
+    </div>
+    </div>
   </Layout>
 </template>
 
@@ -23,6 +30,10 @@ query Home ($page: Int) {
         title
         path
         excerpt
+        acf {
+          level
+          subtitle
+        }
       }
     }
   }
@@ -30,16 +41,15 @@ query Home ($page: Int) {
 </page-query>
 
 <script>
-import { Pager } from 'gridsome'
-import Post from '~/components/Post.vue'
-
+import PostCard from "../components/PostCard";
 export default {
   components: {
-    Pager,
-    Post
+    PostCard,
   },
-  metaInfo: {
-    title: 'Welcome to my blog :)'
-  }
-}
+};
 </script>
+<style>
+.side {
+  color: #484855;
+}
+</style>
