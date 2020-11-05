@@ -1,39 +1,14 @@
-# WordPress starter for Gridsome
+# Default starter for Gridsome
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gridsome/gridsome-starter-wordpress)
+This is the project you get when you run `gridsome create new-project`.
 
-## Install
+### 1. Install Gridsome CLI tool if you don't have
 
-`gridsome create my-gridsome-project wordpress`
+`npm install --global @gridsome/cli`
 
-## Guide
+### 2. Create a Gridsome project
 
-Add your WordPress URL to the plugin options.
-
-```js
-// gridsome.config.js
-
-module.exports = {
-  plugins: [
-    {
-      use: '@gridsome/source-wordpress',
-      options: {
-        baseUrl: 'YOUR_WEBSITE_URL', // required
-        typeName: 'WordPress', // GraphQL schema name
-      }
-    }
-  ],
-  // Setup template routes for any WordPress collection
-  templates: {
-    WordPressPost: '/:year/:month/:day/:slug',
-    WordPressTag: '/tag/:slug'
-  },
-}
-
-```
-
-See all [options](https://gridsome.org/plugins/@gridsome/source-wordpress).
-
-## Included templates
-
-This starter includes basic templates for categories, tags and posts.
+1. `gridsome create my-gridsome-site` to install default starter
+2. `cd my-gridsome-site` to open the folder
+3. `gridsome develop` to start a local dev server at `http://localhost:8080`
+4. Happy coding 🎉🙌

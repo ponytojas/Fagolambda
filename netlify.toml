@@ -1,6 +1,0 @@
-[build]
-  publish = "dist"
-  command = "gridsome build"
-  
-[template.environment]
-  WORDPRESS_URL = "https://fagolambda-436fc1.ingress-baronn.easywp.com/"

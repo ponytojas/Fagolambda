@@ -1,55 +1,33 @@
 <template>
   <Layout>
-    <div class="side">
-      <p class="text-center text-6xl font-thin mt-8">Artículos</p>
-    <div class="flex align-start flex-row flex-wrap mb-8">
-      <div
-        v-for="{ node } in $page.allWordPressPost.edges"
-        :key="node.id"
-        class=" w-full h-auto md:w-1/2 px-2"
-      >
-        <div class="flex justify-center flex-row min-h-screen">
-          <PostCard :post="node"></PostCard>
-        </div>
-      </div>
-    </div>
-    </div>
+
+    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
+    <g-image alt="Example image" src="~/favicon.png" width="135" />
+
+    <h1>Hello, world!</h1>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
+    </p>
+
+    <p class="home-links">
+      <a href="https://gridsome.org/docs/" target="_blank" rel="noopener">Gridsome Docs</a>
+      <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
+    </p>
+
   </Layout>
 </template>
 
-<page-query>
-query Home ($page: Int) {
-  allWordPressPost (page: $page, perPage: 10) @paginate {
-    pageInfo {
-      totalPages
-      currentPage
-    }
-    edges {
-      node {
-        id
-        title
-        path
-        excerpt
-        acf {
-          level
-          subtitle
-        }
-      }
-    }
+<script>
+export default {
+  metaInfo: {
+    title: 'Hello, world!'
   }
 }
-</page-query>
-
-<script>
-import PostCard from "../components/PostCard";
-export default {
-  components: {
-    PostCard,
-  },
-};
 </script>
+
 <style>
-.side {
-  color: #484855;
+.home-links a {
+  margin-right: 1rem;
 }
 </style>

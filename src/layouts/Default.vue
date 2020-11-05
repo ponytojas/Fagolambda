@@ -1,28 +1,50 @@
 <template>
-  <div class="layout container">
-    <div class="grid grid-cols-1 md:grid-cols-7 content">
-      <div class="container col-span-1 md:col-span-3 md:h-screen w-full">
-        <p class="text-center text-6xl font-hairline">Fagolambda</p>
-        <p class="text-center text-2xl">La nieve está mal</p>
-        <p class="text-center text-2xl">Dije claramente rojo, no bermellón</p>
-        <p class="text-center text-2xl">Eres parte de la cornisa Julio</p>
-      </div>
-      <div class="container col-span-4 md:h-screen w-full overflow-auto side">
-        <slot />
-      </div>
-    </div>
+  <div class="layout">
+    <header class="header">
+      <strong>
+        <g-link to="/">{{ $static.metadata.siteName }}</g-link>
+      </strong>
+      <nav class="nav">
+        <g-link class="nav__link" to="/">Home</g-link>
+        <g-link class="nav__link" to="/about/">About</g-link>
+      </nav>
+    </header>
+    <slot/>
   </div>
 </template>
 
+<static-query>
+query {
+  metadata {
+    siteName
+  }
+}
+</static-query>
+
 <style>
-.layout {
-  max-width: 100%;
-  font-family: "Inter", sans-serif;
-  background-color: #1B97AD !important;
-  color: white;
+body {
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  margin:0;
+  padding:0;
+  line-height: 1.5;
 }
 
-.side{
-  background-color: #e9e9e9;
+.layout {
+  max-width: 760px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  height: 80px;
+}
+
+.nav__link {
+  margin-left: 20px;
 }
 </style>
