@@ -22,10 +22,14 @@ query WordPressPostTag ($id: ID!, $page: Int) {
       edges {
         node {
           ... on WordPressPost {
-            id
-            title
-            path
-            excerpt
+           id
+        title
+        path
+        excerpt
+        acf {
+          level
+          subtitle
+        }
         	}
         }
       }

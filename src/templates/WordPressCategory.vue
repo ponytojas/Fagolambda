@@ -23,9 +23,13 @@ query WordPressCategory ($id: ID!, $page: Int) {
         node {
           ... on WordPressPost {
             id
-            title
-            path
-            excerpt
+        title
+        path
+        excerpt
+        acf {
+          level
+          subtitle
+        }
         	}
         }
       }
