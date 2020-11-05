@@ -3,7 +3,7 @@
     <h1>Tag: {{ $page.wordPressPostTag.title }} </h1>
     <ul class="post-list">
       <li v-for="{ node } in $page.wordPressPostTag.belongsTo.edges" :key="node.id">
-        <Post :post="node" />
+        <PostCard :post="node" />
       </li>
     </ul>
     <Pager :info="$page.wordPressPostTag.belongsTo.pageInfo"/>
@@ -36,12 +36,12 @@ query WordPressPostTag ($id: ID!, $page: Int) {
 
 <script>
 import { Pager } from 'gridsome'
-import Post from '~/components/Post.vue'
+import PostCard from '~/components/PostCard.vue'
 
 export default {
   components: {
     Pager,
-    Post
+    PostCard
   },
   metaInfo () {
     return {
