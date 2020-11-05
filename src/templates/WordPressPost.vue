@@ -1,49 +1,52 @@
 <template>
   <Layout>
-    <h1 v-html="$page.wordPressPost.title" />
-    <img
-      v-if="$page.wordPressPost.featuredMedia"
-      :src="$page.wordPressPost.featuredMedia.sourceUrl"
-      :width="$page.wordPressPost.featuredMedia.mediaDetails.width"
-      :alt="$page.wordPressPost.featuredMedia.altText"
-    />
-    <div v-html="$page.wordPressPost.content" />
-    <template v-if="$page.wordPressPost.categories.length">
-      <h4>Posted in</h4>
-      <ul class="list categories">
-        <li
-          v-for="category in $page.wordPressPost.categories"
-          :key="category.id"
-        >
-          <g-link :to="category.path">{{ category.title }}</g-link>
-        </li>
-      </ul>
-    </template>
-    <template v-if="$page.wordPressPost.tags.length">
-      <h4>Tags</h4>
-      <ul class="list tags">
-        <li v-for="tag in $page.wordPressPost.tags" :key="tag.id">
-          <g-link :to="tag.path">{{ tag.title }}</g-link>
-        </li>
-      </ul>
-    </template>
+    <div
+      class="flex flex-col align-center items-center justify-center mt-8 mb-8 px-6 md:px-32"
+    >
+      <p class="text-6xl mb-2 font-thin WPtitle" v-html="$page.wordPressPost.title" />
+
+      <div class="square-brackets-quote">
+        <blockquote>
+          <p
+            v-html="$page.wordPressPost.acf.subtitle"
+            class="text-lg font-thin text-gray-700 mb-2"
+          />
+        </blockquote>
+      </div>
+
+      <div class="mb-12"></div>
+      <img
+        v-if="$page.wordPressPost.featuredMedia"
+        :src="$page.wordPressPost.featuredMedia.sourceUrl"
+        width="50%"
+        :alt="$page.wordPressPost.featuredMedia.altText"
+      />
+      <div class="text-justify text-lg WPcontent" v-html="$page.wordPressPost.content" />
+      <template v-if="$page.wordPressPost.tags.length">
+        <div class="px-6 pt-4 pb-2">
+          <span
+            v-for="tag in $page.wordPressPost.tags"
+            :key="tag.id"
+            class="tag inline-block rounded-full px-3 py-1 text-sm font-semibold text-gray-800 mr-2 mb-2"
+            ><g-link :to="tag.path">#{{ tag.title }}</g-link></span
+          >
+        </div>
+      </template>
+    </div>
   </Layout>
 </template>
 
 <page-query>
 query WordPressPost ($id: ID!) {
   wordPressPost(id: $id) {
-    title {
-      rendered
-    }
+     title 
     content
-    wp:featuredMedia {
-      href
+    featuredMedia{
+      sourceUrl
     }
-    categories {
-      id
-      title
-      path
+    acf{
+      level
+      subtitle
     }
     tags {
       id
@@ -65,23 +68,93 @@ export default {
 </script>
 
 <style>
-ul.list {
-  list-style: none;
-  padding: 0;
+.tag {
+  background-color: #ffb300;
 }
-ul.list li {
+
+.blockquote-wrapper {
+  display: flex;
+  height: 100vh;
+  padding: 0 20px;
+}
+
+/* Blockquote main style */
+.blockquote {
+  position: relative;
+  font-weight: 800;
+  color: #ffffff;
+  width: 100%;
+  max-width: 500px;
+  z-index: 1;
+  align-self: center;
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+}
+
+.WPcontent, .WPtitle{
+  color: #484855 !important;
+}
+
+/* Blockquote header */
+.blockquote p {
+  position: relative;
+  color: #fff;
+  font-weight: 800;
+  line-height: 1;
+  margin: 0;
+}
+
+/* Blockquote right double quotes */
+.blockquote:after {
+  position: absolute;
+  content: "”";
+  color: #fff;
+  font-size: 10rem;
+  line-height: 0;
+  bottom: -43px;
+  right: 30px;
+}
+
+/* increase header size after 600px */
+@media all and (min-width: 600px) {
+
+}
+</style>
+
+<style lang="scss" scoped>
+$bg: #e9e9e9;
+.square-brackets-quote {
   display: inline-block;
-  margin-right: 0.25em;
-}
-ul.list.tags li a {
-  padding: 0.25em 0.5em;
-  background-color: lightgray;
-}
-ul.list.categories li:after {
-  content: ",";
-  display: inline-block;
-}
-ul.list li:last-child:after {
-  content: "";
+  font-family: sans-serif;
+  margin: 1em;
+  max-width: 60em;
+  blockquote {
+    border: solid 0.5em #a75764;
+    display: inline-block;
+    margin: 0;
+    padding: 1em;
+    position: relative;
+    &:before {
+      background-color: $bg;
+      bottom: -1em;
+      content: "";
+      left: 2em;
+      position: absolute;
+      right: 2em;
+      top: -1em;
+    }
+    cite {
+      color: white;
+      display: block;
+      font-size: small;
+      font-style: normal;
+      text-align: right;
+      text-transform: uppercase;
+    }
+    > * {
+      position: relative;
+      z-index: 1;
+    }
+  }
 }
 </style>
