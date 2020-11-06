@@ -18,7 +18,7 @@
             </p>
           </div>
           <div class="flex flex-row side-element mb-12">
-            <p class="text-center text-2xl">Mi trabajo de fin de grado</p>
+            <g-link to="/tfg" class="text-center text-2xl">Mi trabajo de fin de grado</g-link>
           </div>
         </div>
       </div>
