@@ -2,17 +2,19 @@
   <Layout>
     <div class="side">
       <p class="text-center text-6xl font-thin mt-8">Artículos</p>
-    <div class="flex align-start flex-row flex-wrap mb-8">
-      <div
-        v-for="{ node } in $page.allWordPressPost.edges"
-        :key="node.id"
-        class=" w-full h-auto md:w-1/2 px-2"
-      >
-        <div class="flex justify-center flex-row min-h-screen">
-          <PostCard :post="node"></PostCard>
+      <div class="flex align-start flex-row flex-wrap mb-8">
+        <div
+          v-for="{ node } in $page.allWordPressPost.edges"
+          :key="node.id"
+          class=" w-full h-auto md:w-1/2 px-2"
+        >
+          <div class="flex justify-center flex-row">
+            <g-link :to="node.path" class="flex justify-center flex-row">
+              <PostCard :post="node"></PostCard>
+            </g-link>
+          </div>
         </div>
       </div>
-    </div>
     </div>
   </Layout>
 </template>
