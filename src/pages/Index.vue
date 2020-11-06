@@ -20,12 +20,8 @@
 </template>
 
 <page-query>
-query Home ($page: Int) {
-  allWordPressPost (page: $page, perPage: 10) @paginate {
-    pageInfo {
-      totalPages
-      currentPage
-    }
+query Home {
+  allWordPressPost (filter: {categories: {id: {eq: "2"}}}){
     edges {
       node {
         id
