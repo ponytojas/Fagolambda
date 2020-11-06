@@ -25,6 +25,8 @@ module.exports = {
         baseUrl: process.env.WORDPRESS_URL, // required
         typeName: "WordPress", // GraphQL schema name (Optional)
       },
+      downloadRemoteImagesFromPosts: true, // default false
+      downloadRemoteFeaturedImages: true, // default false
     },
     {
       use: "gridsome-plugin-tailwindcss",

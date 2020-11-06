@@ -23,3 +23,7 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+wp-images
+wp-images/
+wp-images/*
