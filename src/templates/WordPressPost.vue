@@ -122,7 +122,7 @@ export default {
 </style>
 
 <style lang="scss" scoped>
-$bg: #e9e9e9;
+$bg: #ececec;
 .square-brackets-quote {
   display: inline-block;
   font-family: sans-serif;
