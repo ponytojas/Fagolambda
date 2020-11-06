@@ -2,8 +2,13 @@
   <div class="layout container">
     <div class="grid grid-cols-1 md:grid-cols-7 content">
       <div class="container col-span-1 md:col-span-3 md:h-screen w-full">
-        <p class="text-center text-6xl font-hairline">Fagolambda</p>
+        <p class="text-center text-6xl font-thin mt-8">Fagolambda</p>
         <div class="flex flex-col justify-around items-center">
+          <div class="flex flex-row">
+            <g-link to="/" class="text-center text-2xl side-element">
+              Artículos
+            </g-link>
+          </div>
           <div class="flex flex-row">
             <p class="text-center text-2xl side-element">¿Qué es Fagolambda?</p>
           </div>
@@ -36,8 +41,7 @@
   background-color: #ececec;
 }
 
-.side-element{
+.side-element {
   margin-top: 10vh;
 }
-
 </style>
