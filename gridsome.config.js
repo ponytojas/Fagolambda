@@ -26,5 +26,8 @@ module.exports = {
         typeName: "WordPress", // GraphQL schema name (Optional)
       },
     },
+    {
+      use: "gridsome-plugin-tailwindcss",
+    },
   ],
 };

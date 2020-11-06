@@ -13,5 +13,8 @@
     "postcss": "^8.1.6",
     "sass-loader": "^10.0.5",
     "tailwindcss": "^1.9.6"
+  },
+  "devDependencies": {
+    "gridsome-plugin-tailwindcss": "^3.0.1"
   }
 }
