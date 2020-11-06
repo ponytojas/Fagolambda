@@ -1,7 +1,7 @@
 <template>
   <div class="w-8/12 h-64 rounded overflow-hidden card">
     <div class="px-6 py-8">
-      <div class="text-2xl font-hairline mb-2">
+      <div class="text-2xl font-semibold mb-2">
         <h2 v-html="post.title" />
       </div>
       <p
