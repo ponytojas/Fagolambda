@@ -23,7 +23,11 @@
         </div>
       </div>
       <div class="container col-span-4 md:h-screen w-full overflow-auto side">
-        <slot />
+       <transition name="slide-fade" appear>
+        <main> <!-- a wrapper for slot is needed -->
+          <slot /> <!-- the content -->
+        </main>
+      </transition>
       </div>
     </div>
   </div>
@@ -44,4 +48,17 @@
 .side-element {
   margin-top: 10vh;
 }
+
+.slide-fade-enter-active {
+  transition: all .3s ease;
+}
+.slide-fade-leave-active {
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateX(10px);
+  opacity: 0;
+}
 </style>
+
