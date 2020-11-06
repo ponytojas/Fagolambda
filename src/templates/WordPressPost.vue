@@ -20,6 +20,7 @@
         :src="$page.wordPressPost.featuredMedia.sourceUrl"
         width="50%"
         :alt="$page.wordPressPost.featuredMedia.altText"
+        class="mb-20"
       />
       <div class="text-justify text-lg WPcontent" v-html="$page.wordPressPost.content" />
       <template v-if="$page.wordPressPost.tags.length">
@@ -113,6 +114,14 @@ export default {
   line-height: 0;
   bottom: -43px;
   right: 30px;
+}
+
+img {
+    display:block;
+    margin:auto;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+
 }
 
 /* increase header size after 600px */
