@@ -2,11 +2,13 @@
   <Layout>
     <div class="side">
       <p class="text-center text-6xl font-thin mt-8">
-        {{ $page.wordPressCategory.title }}
+        <span class="font-normal">T</span>rabajo
+        <span class="font-normal">F</span>in de
+        <span class="font-normal">G</span>rado
       </p>
       <div class="flex align-start flex-row flex-wrap mb-8">
         <div
-          v-for="{ node } in $page.wordPressCategory.belongsTo.edges"
+          v-for="{ node } in $page.allWordPressPost.edges"
           :key="node.id"
           class=" w-full h-auto md:w-1/2 px-2"
         >
@@ -18,32 +20,21 @@
         </div>
       </div>
     </div>
-
-    <Pager :info="$page.wordPressCategory.belongsTo.pageInfo" />
   </Layout>
 </template>
 
 <page-query>
-query WordPressCategory ($id: ID!, $page: Int) {
-  wordPressCategory(id: $id) {
-    title
-    belongsTo(page: $page, perPage: 10) @paginate {
-      pageInfo {
-        totalPages
-        currentPage
-      }
-      edges {
-        node {
-          ... on WordPressPost {
-            id
+query Home {
+  allWordPressPost (filter: {categories: {id: {eq: "3"}}}){
+    edges {
+      node {
+        id
         title
         path
         excerpt
         acf {
           level
           subtitle
-        }
-        	}
         }
       }
     }
@@ -52,18 +43,15 @@ query WordPressCategory ($id: ID!, $page: Int) {
 </page-query>
 
 <script>
-import { Pager } from "gridsome";
-import PostCard from "~/components/PostCard.vue";
-
+import PostCard from "../components/PostCard";
 export default {
   components: {
-    Pager,
     PostCard,
-  },
-  metaInfo() {
-    return {
-      title: this.$page.wordPressCategory.title,
-    };
   },
 };
 </script>
+<style>
+.side {
+  color: #484855;
+}
+</style>

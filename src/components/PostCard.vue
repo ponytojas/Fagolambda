@@ -1,16 +1,14 @@
 <template>
   <div class="w-8/12 h-64 rounded overflow-hidden card">
-    <g-link :to="post.path">
-      <div class="px-6 py-8">
-        <div class="text-2xl font-hairline mb-2">
-          <h2 v-html="post.title" />
-        </div>
-        <p
-          class="text-gray-700 text-base whitespace-normal"
-          v-html="post.acf.subtitle"
-        ></p>
+    <div class="px-6 py-8">
+      <div class="text-2xl font-semibold mb-2">
+        <h2 v-html="post.title" />
       </div>
-    </g-link>
+      <p
+        class="text-gray-700 text-base whitespace-normal"
+        v-html="post.acf.subtitle"
+      ></p>
+    </div>
   </div>
 </template>
 
