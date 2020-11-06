@@ -5,24 +5,24 @@
         <p class="text-center text-6xl font-thin mt-8">Fagolambda</p>
         <div class="flex flex-col justify-around items-center">
           <div class="flex flex-row">
-            <g-link to="/" class="text-center text-2xl side-element">
+            <g-link to="/" class="text-center text-2xl mt-10 md:mt-20">
               Artículos
             </g-link>
           </div>
           <div class="flex flex-row">
-            <p class="text-center text-2xl side-element">¿Qué es Fagolambda?</p>
+            <p class="text-center text-2xl mt-10 md:mt-20">¿Qué es Fagolambda?</p>
           </div>
-          <div class="flex flex-row side-element">
+          <div class="flex flex-row mt-10 md:mt-20">
             <p class="text-center text-2xl">
               Sobre mi, Lorena
             </p>
           </div>
-          <div class="flex flex-row side-element mb-12">
+          <div class="flex flex-row mt-10 md:mt-20 mb-12">
             <g-link to="/tfg" class="text-center text-2xl">Mi trabajo de fin de grado</g-link>
           </div>
         </div>
       </div>
-      <div class="container col-span-4 md:h-screen w-full overflow-auto side">
+      <div class="container col-span-4 min-h-screen h-auto md:h-screen w-full overflow-auto side">
        <transition name="slide-fade" appear>
         <main> <!-- a wrapper for slot is needed -->
           <slot /> <!-- the content -->
@@ -43,10 +43,6 @@
 
 .side {
   background-color: #ececec;
-}
-
-.side-element {
-  margin-top: 10vh;
 }
 
 .slide-fade-enter-active {
