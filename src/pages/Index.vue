@@ -32,6 +32,12 @@ query Home {
           level
           subtitle
         }
+        categories{
+           title
+        }
+        tags{
+          title
+        }
       }
     }
   }

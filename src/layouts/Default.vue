@@ -10,7 +10,9 @@
             </g-link>
           </div>
           <div class="flex flex-row">
-            <p class="text-center text-2xl mt-10 md:mt-20">¿Qué es Fagolambda?</p>
+            <p class="text-center text-2xl mt-10 md:mt-20">
+              ¿Qué es Fagolambda?
+            </p>
           </div>
           <div class="flex flex-row mt-10 md:mt-20">
             <p class="text-center text-2xl">
@@ -18,20 +20,67 @@
             </p>
           </div>
           <div class="flex flex-row mt-10 md:mt-20 mb-12">
-            <g-link to="/tfg" class="text-center text-2xl">Mi trabajo de fin de grado</g-link>
+            <g-link to="/tfg" class="text-center text-2xl"
+              >Mi trabajo de fin de grado</g-link
+            >
+          </div>
+          <div v-if="this.$page.allWordPressPost" class="flex flex-row mt-10 md:mt-20 mb-12 w-full px-20 sm:px-10 md:px-10 xl:px-48">
+            <autocomplete
+              :search="search"
+              @submit="handleSubmit"
+              placeholder="Busca un artículo"
+              ref="autocomplete"
+              aria-label="Busca un artículo"
+              class="text-black w-full"
+              :debounce-time="500"
+            ></autocomplete>
           </div>
         </div>
       </div>
-      <div class="container col-span-4 min-h-screen h-auto md:h-screen w-full overflow-auto side">
-       <transition name="slide-fade" appear>
-        <main> <!-- a wrapper for slot is needed -->
-          <slot /> <!-- the content -->
-        </main>
-      </transition>
+      <div
+        class="container col-span-4 min-h-screen h-auto md:h-screen w-full overflow-auto side"
+      >
+        <transition name="slide-fade" appear>
+          <main>
+            <slot />
+          </main>
+        </transition>
       </div>
     </div>
   </div>
 </template>
+
+<script>
+import Autocomplete from "@trevoreyre/autocomplete-vue";
+export default {
+  components: {
+    Autocomplete,
+  },
+
+  methods: {
+    search(input) {
+      if (input.length < 1) {
+        return [];
+      }
+      return this.$page.allWordPressPost.edges
+        .filter((post) => {
+          return (
+            post.node.title.toLowerCase().includes(input.toLowerCase()) ||
+            post.node.acf.subtitle.toLowerCase().includes(input.toLowerCase())
+          );
+        })
+        .map((post) => "Título: " + post.node.title);
+    },
+    handleSubmit(result) {
+      let title = result.substring(result.indexOf(":") + 2);
+      let pathToArticle = this.$page.allWordPressPost.edges
+        .filter((el) => el.node.title == title)
+        .map((el) => el.node.path)[0];
+      this.$router.push(pathToArticle);
+    },
+  },
+};
+</script>
 
 <style>
 .layout {
@@ -46,10 +95,10 @@
 }
 
 .slide-fade-enter-active {
-  transition: all .6s
+  transition: all 0.6s;
 }
 .slide-fade-leave-active {
-  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
 }
 .slide-fade-enter, .slide-fade-leave-to
 /* .slide-fade-leave-active below version 2.1.8 */ {
@@ -57,4 +106,3 @@
   opacity: 0;
 }
 </style>
-
