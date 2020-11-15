@@ -21,7 +21,7 @@
         :alt="$page.wordPressPost.featuredMedia.altText"
         class="mb-20 w-3/4"
       />
-      <div class="text-justify text-lg WPcontent" v-html="$page.wordPressPost.content" />
+      <div class="text-justify prose prose-sm sm:prose lg:prose-lg xl:prose-xl WPcontent" v-html="$page.wordPressPost.content" />
       <template v-if="$page.wordPressPost.tags.length">
         <div class="px-6 pt-4 pb-2">
           <span
