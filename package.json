@@ -18,6 +18,8 @@
     "tailwindcss": "^1.9.6"
   },
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^3.0.0",
+    "@fullhuman/vue-cli-plugin-purgecss": "~3.0.1",
     "gridsome-plugin-tailwindcss": "^3.0.1"
   }
 }
