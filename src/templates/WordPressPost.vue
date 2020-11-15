@@ -3,13 +3,16 @@
     <div
       class="flex flex-col align-center items-center justify-center mt-8 mb-8 px-6 md:px-32"
     >
-      <p class="text-6xl mb-2 font-thin WPtitle" v-html="$page.wordPressPost.title" />
+      <p
+        class="text-6xl mb-2 font-thin WPtitle"
+        v-html="this.articleTitle"
+      />
 
       <div class="square-brackets-quote">
         <blockquote>
           <p
             v-html="$page.wordPressPost.acf.subtitle"
-            class="text-lg font-thin text-gray-700 mb-2"
+            class="prose prose-lg font-thin text-gray-700 mb-2"
           />
         </blockquote>
       </div>
@@ -21,7 +24,10 @@
         :alt="$page.wordPressPost.featuredMedia.altText"
         class="mb-20 w-3/4"
       />
-      <div class="text-justify prose prose-sm sm:prose lg:prose-lg xl:prose-xl WPcontent" v-html="$page.wordPressPost.content" />
+      <div
+        class="text-justify prose prose-sm sm:prose lg:prose-lg xl:prose-xl WPcontent"
+        v-html="$page.wordPressPost.content"
+      />
       <template v-if="$page.wordPressPost.tags.length">
         <div class="px-6 pt-4 pb-2">
           <span
@@ -64,10 +70,27 @@ export default {
       title: this.$page.wordPressPost.title,
     };
   },
+  data(){
+    return{
+      articleTitle: ""
+    }
+  },
+  beforeMount() {
+    let separateWord = this.$page.wordPressPost.title.toLowerCase().split(" ");
+    for (var i = 0; i < separateWord.length; i++) {
+      separateWord[i] =
+        separateWord[i].charAt(0).toUpperCase().bold() + separateWord[i].substring(1);
+    }
+   this.articleTitle = separateWord.join(" ");
+  },
 };
 </script>
 
 <style>
+.WPtitle::first-letter {
+  font-weight: 400;
+}
+
 .tag {
   background-color: #ffb300;
 }
@@ -91,7 +114,8 @@ export default {
   border-bottom: solid 1px;
 }
 
-.WPcontent, .WPtitle{
+.WPcontent,
+.WPtitle {
   color: #484855 !important;
 }
 
@@ -116,16 +140,14 @@ export default {
 }
 
 img {
-    display:block;
-    margin:auto;
-    margin-top: 3vh;
-    margin-bottom: 3vh;
-
+  display: block;
+  margin: auto;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
 }
 
 /* increase header size after 600px */
 @media all and (min-width: 600px) {
-
 }
 </style>
 

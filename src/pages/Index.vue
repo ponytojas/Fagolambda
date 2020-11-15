@@ -1,7 +1,9 @@
 <template>
   <Layout>
     <div class="side">
-      <p class="text-center text-6xl font-thin mt-8">Artículos</p>
+      <p class="text-center text-6xl font-thin mt-8">
+        <span class="font-normal">A</span>rtículos
+      </p>
       <div class="flex align-start flex-row flex-wrap mb-8">
         <div
           v-for="{ node } in $page.allWordPressPost.edges"
