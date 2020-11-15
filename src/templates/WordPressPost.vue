@@ -18,9 +18,8 @@
       <g-image
         v-if="$page.wordPressPost.featuredMedia"
         :src="$page.wordPressPost.featuredMedia.sourceUrl"
-        width="50%"
         :alt="$page.wordPressPost.featuredMedia.altText"
-        class="mb-20"
+        class="mb-20 w-3/4"
       />
       <div class="text-justify text-lg WPcontent" v-html="$page.wordPressPost.content" />
       <template v-if="$page.wordPressPost.tags.length">
