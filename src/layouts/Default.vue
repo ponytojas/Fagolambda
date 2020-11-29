@@ -1,9 +1,9 @@
 <template>
   <div class="layout container">
     <div class="grid grid-cols-1 md:grid-cols-7 content">
-      <div class="container col-span-1 md:col-span-2 mds:h-screen w-full">
+      <div class="container col-span-1 md:col-span-2 md:h-screen w-full">
         <p class="text-center sm:text-6xl md:text-4xl lg:text-6xl text-6xl font-thin mt-8">Fagolambda</p>
-        <div class="flex flex-col justify-around items-center">
+        <div class="flex flex-col items-center">
           <div class="flex flex-row">
             <g-link to="/" class="text-center text-2xl sm:text-base lg:text-3xl md:text-xl mt-10 lg:mt-8 md:mt-4 sm:mt-4 sm:mb-4">
               Artículos

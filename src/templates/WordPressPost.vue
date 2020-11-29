@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div
-      class="flex flex-col align-center items-center justify-center mt-8 mb-8 px-6 md:px-32"
+      class="flex flex-col align-center items-center justify-center mt-8 mb-8 px-6 md:px-32 py-24 h-auto"
     >
       <p
         class="text-6xl mb-2 font-thin WPtitle"
@@ -25,7 +25,7 @@
         class="mb-20 w-3/4"
       />
       <div
-        class="text-justify prose prose-sm sm:prose lg:prose-lg xl:prose-xl WPcontent"
+        class="text-justify prose sm:prose lg:prose-lg xl:prose-xl WPcontent"
         v-html="$page.wordPressPost.content"
       />
       <template v-if="$page.wordPressPost.tags.length">
