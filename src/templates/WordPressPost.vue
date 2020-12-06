@@ -22,16 +22,16 @@
         />
       </p>
 
-      <div
-        class="flex flex-row mt-10"
-      >
-        <star-rating
-          :rating="$page.wordPressPost.acf.level"
-          :show-rating="false"
-          :read-only="true"
-          :max-rating="3"
-          :increment="0.01"
-        ></star-rating>
+      <div class="flex flex-row mt-10">
+        <ClientOnly>
+          <star-rating
+            :rating="$page.wordPressPost.acf.level"
+            :show-rating="false"
+            :read-only="true"
+            :max-rating="3"
+            :increment="0.01"
+          ></star-rating>
+        </ClientOnly>
       </div>
 
       <div class="mb-12"></div>
@@ -84,8 +84,6 @@ query WordPressPost ($id: ID!) {
 </page-query>
 
 <script>
-import StarRating from "vue-star-rating";
-
 export default {
   metaInfo() {
     return {
@@ -93,7 +91,10 @@ export default {
     };
   },
   components: {
-    StarRating,
+    StarRating: () =>
+      import("vue-star-rating")
+        .then((m) => m.StarRating)
+        .catch(),
   },
   data() {
     return {
