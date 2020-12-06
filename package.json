@@ -10,12 +10,11 @@
     "@gridsome/source-wordpress": "^0.5.3",
     "@tailwindcss/typography": "^0.2.0",
     "@trevoreyre/autocomplete-vue": "^2.2.0",
-    "gridsome": "^0.7.22",
+    "gridsome": "^0.7.23",
     "node-sass": "^5.0.0",
-    "postcss": "^8.1.6",
-    "sass-loader": "^10.0.5",
-    "sharp": "^0.25.4",
-    "tailwindcss": "^1.9.6"
+    "sass-loader": "^10.1.0",
+    "sharp": "^0.26.3",
+    "vue-star-rating": "^1.7.0"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^3.0.0",

@@ -1,12 +1,9 @@
 <template>
   <Layout>
     <div
-      class="flex flex-col align-center items-center justify-center mt-8 mb-8 px-6 md:px-32 py-24 h-auto"
+      class="flex flex-col align-center items-center justify-center md:mt-8 mb-8 px-6 md:px-32 py-10 md:py-24 h-auto"
     >
-      <p
-        class="text-6xl mb-2 font-thin WPtitle"
-        v-html="this.articleTitle"
-      />
+      <p class="text-6xl mb-2 font-thin WPtitle" v-html="this.articleTitle" />
 
       <div class="square-brackets-quote">
         <blockquote>
@@ -15,6 +12,26 @@
             class="prose prose-lg font-thin text-gray-700 mb-2"
           />
         </blockquote>
+      </div>
+
+      <p class="text-black">
+        Un artítuclo escrito por:
+        <span
+          v-html="$page.wordPressPost.author.name"
+          class="prose prose-xl font-thin text-gray-700 mb-2"
+        />
+      </p>
+
+      <div
+        class="flex flex-row mt-10"
+      >
+        <star-rating
+          :rating="$page.wordPressPost.acf.level"
+          :show-rating="false"
+          :read-only="true"
+          :max-rating="3"
+          :increment="0.01"
+        ></star-rating>
       </div>
 
       <div class="mb-12"></div>
@@ -50,6 +67,9 @@ query WordPressPost ($id: ID!) {
     featuredMedia{
       sourceUrl
     }
+     author {
+          name
+        }
     acf{
       level
       subtitle
@@ -64,24 +84,33 @@ query WordPressPost ($id: ID!) {
 </page-query>
 
 <script>
+import StarRating from "vue-star-rating";
+
 export default {
   metaInfo() {
     return {
       title: this.$page.wordPressPost.title,
     };
   },
-  data(){
-    return{
-      articleTitle: ""
-    }
+  components: {
+    StarRating,
+  },
+  data() {
+    return {
+      articleTitle: "",
+      colorizedStarts: "",
+    };
   },
   beforeMount() {
     let separateWord = this.$page.wordPressPost.title.toLowerCase().split(" ");
     for (var i = 0; i < separateWord.length; i++) {
       separateWord[i] =
-        separateWord[i].charAt(0).toUpperCase().bold() + separateWord[i].substring(1);
+        separateWord[i]
+          .charAt(0)
+          .toUpperCase()
+          .bold() + separateWord[i].substring(1);
     }
-   this.articleTitle = separateWord.join(" ");
+    this.articleTitle = separateWord.join(" ");
   },
 };
 </script>
