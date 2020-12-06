@@ -22,17 +22,14 @@
         />
       </p>
 
-      <div class="flex flex-row mt-10">
-        <ClientOnly>
-          <star-rating
-            :rating="$page.wordPressPost.acf.level"
-            :show-rating="false"
-            :read-only="true"
-            :max-rating="3"
-            :increment="0.01"
-          ></star-rating>
-        </ClientOnly>
-      </div>
+      <ClientOnly>
+        <StarRating
+          :rating="$page.wordPressPost.acf.level"
+          :show-rating="false"
+          :read-only="true"
+          :max-rating="3"
+        ></StarRating>
+      </ClientOnly>
 
       <div class="mb-12"></div>
       <g-image
