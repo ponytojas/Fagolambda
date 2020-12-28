@@ -12,9 +12,6 @@
       >
         <g-image
           src="../assets/profile.jpg"
-          @mouseover="
-            showingImage = showingImage == firtsRoute ? secondRoute : firtsRoute
-          "
           width="250"
           height="250"
           class="rounded-full mb-10"
@@ -31,8 +28,20 @@
             mis estudios en la Neurobiología.
           </p>
           <p>
-            Actualmente estoy realizando prácticas externas en un laboratorio de
-            neurobiología enfocado en la neurofisiología de la visión.
+            Actualmente estoy realizando prácticas externas as en un laboratorio
+            de neurobiología, en la Universidad de Alcalá, enfocado en la
+            neurofisiología de la visión.
+          </p>
+          <p>
+            Además, estoy realizando mi Trabajo de Fin de Grado:
+            <span class="italic font-semibold"
+              >"Evaluación de la respuesta fisiológica de células nerviosas
+              sometidas a la acción de ligandos fotosensibles y estímulos
+              lumínicos"</span
+            >, basándome en el estudio de mis prácticas externas en las que
+            realizo <span class="font-semibold">E</span>lectroretinografía y
+            <span class="font-bold">P</span>atch
+            <span class="font-bold">C</span>lamp.
           </p>
         </div>
         <button
