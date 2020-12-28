@@ -16,12 +16,13 @@
               Artículos
             </g-link>
           </div>
-          <div class="flex flex-row">
-            <p
+          <div class="flex flex-row mt-10 md:mt-4 lg:mt-8 sm:mt-4 sm:mb-4">
+            <g-link
+              to="/fagolambda/"
               class="text-center text-2xl sm:text-base lg:text-3xl md:text-xl mt-10 lg:mt-8 md:mt-4 sm:mt-4 sm:mb-4"
             >
               ¿Qué es Fagolambda?
-            </p>
+            </g-link>
           </div>
           <div class="flex flex-row mt-10 md:mt-4 lg:mt-8 sm:mt-4 sm:mb-4">
             <g-link
@@ -31,16 +32,19 @@
               Sobre mí, Lorena
             </g-link>
           </div>
-          <div
-            class="flex flex-row mt-10 md:mt-4 mb-12 lg:mt-8 sm:mt-4 sm:mb-4"
-          >
+          <div class="flex flex-row mt-10 md:mt-4 lg:mt-8 sm:mt-4 sm:mb-4">
             <g-link
               to="/tfg"
-              class="text-center text-2xl sm:text-base lg:text-3xl md:text-xl"
+              class="text-center text-2xl sm:text-base lg:text-3xl md:text-xl mt-10 lg:mt-8 md:mt-4 sm:mt-4 sm:mb-4"
               >Mi trabajo de fin de grado</g-link
             >
           </div>
-          <div v-if="this.$route.path != '/about/'">
+          <div
+            v-if="
+              this.$route.path != '/about/' &&
+                this.$route.path != '/fagolambda/'
+            "
+          >
             <div
               v-if="this.$page.allWordPressPost"
               class="flex flex-row mt-10 md:mt-4 pb-4 w-full px-20 sm:px-6 md:px-6 xl:px-20"
