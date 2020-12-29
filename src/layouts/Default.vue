@@ -2,8 +2,11 @@
   <div class="layout container">
     <div class="grid grid-cols-1 md:grid-cols-7 content">
       <div class="container col-span-1 md:col-span-2 md:h-screen w-full">
+        <div class="flex flex-row">
+          <g-image :immediate=false :blur="0" class="w-64 mt-2 -mb-10 mx-auto" src="~/assets/fago_blanco.png" />
+        </div>
         <p
-          class="text-center sm:text-6xl md:text-4xl lg:text-6xl text-6xl font-thin mt-8"
+          class="text-center sm:text-6xl md:text-4xl lg:text-6xl text-6xl font-thin"
         >
           Fagolambda
         </p>
@@ -16,7 +19,7 @@
               Artículos
             </g-link>
           </div>
-          <div class="flex flex-row mt-10 md:mt-4 lg:mt-8 sm:mt-4 sm:mb-4">
+          <div class="flex flex-row mt-2 md:mt-4 lg:mt-8 sm:mt-4 sm:mb-4">
             <g-link
               to="/fagolambda/"
               class="text-center text-2xl sm:text-base lg:text-3xl md:text-xl mt-10 lg:mt-8 md:mt-4 sm:mt-4 sm:mb-4"
@@ -24,7 +27,7 @@
               ¿Qué es Fagolambda?
             </g-link>
           </div>
-          <div class="flex flex-row mt-10 md:mt-4 lg:mt-8 sm:mt-4 sm:mb-4">
+          <div class="flex flex-row mt-2 md:mt-4 lg:mt-8 sm:mt-4 sm:mb-4">
             <g-link
               to="/about/"
               class="text-center text-2xl sm:text-base lg:text-3xl md:text-xl mt-10 lg:mt-8 md:mt-4 sm:mt-4 sm:mb-4"
@@ -32,7 +35,7 @@
               Sobre mí, Lorena
             </g-link>
           </div>
-          <div class="flex flex-row mt-10 md:mt-4 lg:mt-8 sm:mt-4 sm:mb-4">
+          <div class="flex flex-row mt-2 md:mt-4 lg:mt-8 sm:mt-4 sm:mb-4">
             <g-link
               to="/tfg"
               class="text-center text-2xl sm:text-base lg:text-3xl md:text-xl mt-10 lg:mt-8 md:mt-4 sm:mt-4 sm:mb-4"

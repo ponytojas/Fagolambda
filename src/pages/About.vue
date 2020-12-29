@@ -48,7 +48,7 @@
           class="mt-12 shadow bg-green-500 hover:bg-green-400 sm:text-lg xl:text-xl focus:outline-none text-white py-1 px-2 sm:py-1 sm:px-2 xl:py-2 xl:px-4 rounded"
           type="button"
         >
-          <g-link to="~/assets/CV-Lorena.pdf" target="_blank"
+          <g-link to="~/assets/CV-Lorena-Biologia-min.pdf" target="_blank"
             >Curriculum</g-link
           >
         </button>

@@ -13,10 +13,10 @@
           class="flex flex-col align-middle justify-items-center justify-center"
         >
           <g-image
-            src="../assets/profile.jpg"
-            width="250"
-            height="250"
-            class="rounded-full mb-6 self-center"
+            src="../assets/fago_azul.png"
+            width="500"
+            height="500"
+            class="rounded-full -my-32 self-center"
           />
           <p class="text-center font-light italic mb-10">
             Fagolambda surge de la ilusión de compartir.
