@@ -1,5 +1,5 @@
 <template>
-  <div class="w-8/12 h-64 rounded overflow-hidden card">
+  <div class="w-10/12 sm:w-10/12 md:w-full lg:w-8/12 my-5 h-auto lg:h-64 rounded overflow-hidden card">
     <div class="px-6 py-8">
       <div class="text-2xl font-semibold mb-2">
         <h2 v-html="post.title" />

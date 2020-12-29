@@ -39,7 +39,7 @@
         class="mb-20 w-3/4"
       />
       <div
-        class="text-justify prose sm:prose lg:prose-lg xl:prose-xl WPcontent"
+        class="text-justify w-11/12 prose sm:prose lg:prose-lg xl:prose-xl WPcontent"
         v-html="$page.wordPressPost.content"
       />
       <template v-if="$page.wordPressPost.tags.length">
@@ -114,6 +114,10 @@ export default {
 </script>
 
 <style>
+iframe{
+  width: 100% !important;
+}
+
 .WPtitle::first-letter {
   font-weight: 400;
 }
