@@ -28,7 +28,7 @@
             mis estudios en la Neurobiología.
           </p>
           <p>
-            Actualmente estoy realizando prácticas externas as en un laboratorio
+            Actualmente estoy realizando prácticas externas en un laboratorio
             de neurobiología, en la Universidad de Alcalá, enfocado en la
             neurofisiología de la visión.
           </p>
@@ -45,7 +45,7 @@
           </p>
         </div>
         <button
-          class="mt-12 shadow bg-green-500 hover:bg-green-400 sm:text-lg xl:text-xl focus:outline-none text-white py-1 px-2 sm:py-1 sm:px-2 xl:py-2 xl:px-4 rounded"
+          class="mt-12 shadow button-btn sm:text-lg xl:text-xl focus:outline-none text-white py-3 px-4 sm:py-3 sm:px-4 xl:py-2 xl:px-4 rounded"
           type="button"
         >
           <g-link to="~/assets/CV-Lorena-Biologia-min.pdf" target="_blank"
@@ -64,5 +64,13 @@ export default {};
 <style>
 .side {
   color: #484855;
+}
+
+.button-btn {
+  background-color: #1b97ad;
+}
+
+.button-btn:hover {
+  background-color: #177686;
 }
 </style>

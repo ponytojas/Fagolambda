@@ -37,7 +37,7 @@
           <p>
             Podréis leer artículos tan variados y de diferentes temáticas como
             la neurobiología (<span class="italic"
-              >como algunas personas ciegas son capaces de esquivar
+              >cómo algunas personas ciegas son capaces de esquivar
               objetos</span
             >), parasitología (<span class="italic"
               >caracoles que se dejan comer</span
@@ -47,7 +47,7 @@
           </p>
         </div>
         <button
-          class="mt-12 shadow bg-green-500 hover:bg-green-400 sm:text-lg xl:text-xl focus:outline-none text-white py-1 px-2 sm:py-1 sm:px-2 xl:py-2 xl:px-4 rounded"
+          class="mt-12 shadow button-btn sm:text-lg xl:text-xl focus:outline-none text-white  py-3 px-4 sm:py-3 sm:px-4 xl:py-2 xl:px-4 rounded"
           type="button"
         >
           <g-link to="/">¡Visita Fagolambda!</g-link>
@@ -64,5 +64,13 @@ export default {};
 <style>
 .side {
   color: #484855;
+}
+
+.button-btn {
+  background-color: #1b97ad;
+}
+
+.button-btn:hover {
+  background-color: #177686;
 }
 </style>
