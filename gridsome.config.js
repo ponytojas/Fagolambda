@@ -3,7 +3,17 @@ const tailwindcss = require("tailwindcss");
 module.exports = {
   siteName: "Fagolambda",
   siteDescription: "Fagolambda",
-
+  icon: {
+    favicon: {
+      src: "./src/favicon.png",
+      sizes: [16, 32, 96],
+    },
+    touchicon: {
+      src: "./src/favicon.png",
+      sizes: [76, 152, 120, 167],
+      precomposed: true,
+    },
+  },
   templates: {
     WordPressCategory: "/category/:slug", // adds a route for the "category" post type (Optional)
     WordPressPost: "/:slug", // adds a route for the "post" post type (Optional)
