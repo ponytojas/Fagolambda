@@ -31,11 +31,12 @@ query Home {
         path
         excerpt
         acf {
-          level
           subtitle
+          timetoread
         }
         categories{
            title
+           id
         }
         tags{
           title

@@ -13,8 +13,7 @@
     "gridsome": "^0.7.23",
     "node-sass": "^5.0.0",
     "sass-loader": "^10.1.0",
-    "sharp": "^0.26.3",
-    "vue-star-rating": "^1.7.0"
+    "sharp": "^0.26.3"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^3.0.0",

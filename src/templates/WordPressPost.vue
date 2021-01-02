@@ -5,7 +5,7 @@
     >
       <p class="text-6xl mb-2 font-thin WPtitle" v-html="this.articleTitle" />
 
-      <div class="square-brackets-quote">
+      <div v-if="$page.wordPressPost.acf.subtitle" class="square-brackets-quote">
         <blockquote>
           <p
             v-html="$page.wordPressPost.acf.subtitle"
@@ -20,6 +20,12 @@
           v-html="$page.wordPressPost.author.name"
           class="prose prose-xl font-thin text-gray-700 mb-2"
         />
+      </p>
+
+       <p class="mt-5 italic text-black">
+        Tiempo aprox. de lectura:
+        <span class="font-thin text-gray-700 " v-html="$page.wordPressPost.acf.timetoread"></span
+        ><span class="font-thin text-gray-700"> minutos</span>
       </p>
 
       <div class="mb-12"></div>
@@ -59,9 +65,14 @@ query WordPressPost ($id: ID!) {
           name
         }
     acf{
-      level
+      timetoread
       subtitle
+      references
     }
+    categories{
+           title
+           id
+        }
     tags {
       id
       title
@@ -105,7 +116,7 @@ export default {
 </script>
 
 <style>
-iframe{
+iframe {
   width: 100% !important;
 }
 

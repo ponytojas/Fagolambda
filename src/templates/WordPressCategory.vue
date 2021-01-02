@@ -40,7 +40,7 @@ query WordPressCategory ($id: ID!, $page: Int) {
         path
         excerpt
         acf {
-          level
+          timetoread
           subtitle
         }
         	}

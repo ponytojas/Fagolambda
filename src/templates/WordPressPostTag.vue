@@ -40,7 +40,7 @@ query WordPressPostTag ($id: ID!, $page: Int) {
         path
         excerpt
         acf {
-          level
+          timetoread
           subtitle
         }
         	}

@@ -27,14 +27,21 @@
 query Home {
   allWordPressPost (filter: {categories: {id: {eq: "3"}}}){
     edges {
-      node {
+            node {
         id
         title
         path
         excerpt
         acf {
-          level
           subtitle
+          timetoread
+        }
+        categories{
+           title
+           id
+        }
+        tags{
+          title
         }
       }
     }
