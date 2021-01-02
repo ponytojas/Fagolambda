@@ -22,15 +22,6 @@
         />
       </p>
 
-      <ClientOnly>
-        <StarRating
-          :rating="$page.wordPressPost.acf.level"
-          :show-rating="false"
-          :read-only="true"
-          :max-rating="3"
-        ></StarRating>
-      </ClientOnly>
-
       <div class="mb-12"></div>
       <g-image
         v-if="$page.wordPressPost.featuredMedia"
@@ -39,7 +30,7 @@
         class="mb-20 w-3/4"
       />
       <div
-        class="text-justify w-11/12 prose sm:prose lg:prose-lg xl:prose-xl WPcontent"
+        class="text-justify w-11/12 sm:w-full prose sm:prose lg:prose-lg xl:prose-xl WPcontent"
         v-html="$page.wordPressPost.content"
       />
       <template v-if="$page.wordPressPost.tags.length">
