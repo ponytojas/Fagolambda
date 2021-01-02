@@ -44,14 +44,24 @@
             <span class="font-bold">C</span>lamp.
           </p>
         </div>
-        <button
-          class="mt-12 shadow button-btn sm:text-lg xl:text-xl focus:outline-none text-white py-3 px-4 sm:py-3 sm:px-4 xl:py-2 xl:px-4 rounded"
+        <div class="flex flex-row">
+          <button
+          class="mt-12 mx-4 shadow button-btn sm:text-lg xl:text-xl focus:outline-none text-white py-3 px-4 sm:py-3 sm:px-4 xl:py-2 xl:px-4 rounded"
           type="button"
         >
           <g-link to="~/assets/CV-Lorena-Biologia-min.pdf" target="_blank"
             >Curriculum</g-link
           >
         </button>
+        <button
+          class="mt-12 mx-4 shadow button-btn sm:text-lg xl:text-xl focus:outline-none text-white py-3 px-4 sm:py-3 sm:px-4 xl:py-2 xl:px-4 rounded"
+          type="button"
+        >
+          <g-link to="mailto:me@fagolambda.com" target="_blank"
+            >Envíame un correo</g-link
+          >
+        </button>
+        </div>
       </div>
     </div>
   </Layout>

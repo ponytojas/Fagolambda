@@ -3,7 +3,7 @@
     <div class="grid grid-cols-1 md:grid-cols-7 content">
       <div class="container sm:min-h-full h-auto col-span-1 md:col-span-2 w-full">
         <div class="flex flex-row">
-          <g-image :immediate=false width="250" fit="inside" :blur="0" class="responsive-image mt-2 -mb-10 mx-auto" src="~/assets/fago_blanco.png" />
+          <g-image :immediate=false width="250" fit="inside" blur="0" class="responsive-image mt-2 -mb-10 mx-auto" src="~/assets/fago_blanco.png" />
         </div>
         <p
           class="text-center text-3xl font-normal sm:text-5xl md:text-3xl lg:text-5xl xl:text-6xl sm:font-thin md:font-normal"
