@@ -39,6 +39,10 @@ query WordPressCategory ($id: ID!, $page: Int) {
         title
         path
         excerpt
+         categories{
+           title
+           id
+        }
         acf {
           timetoread
           subtitle
