@@ -89,16 +89,9 @@ export default {
       title: this.$page.wordPressPost.title,
     };
   },
-  components: {
-    StarRating: () =>
-      import("vue-star-rating")
-        .then((m) => m.StarRating)
-        .catch(),
-  },
   data() {
     return {
       articleTitle: "",
-      colorizedStarts: "",
     };
   },
   beforeMount() {
