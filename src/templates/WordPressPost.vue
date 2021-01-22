@@ -15,7 +15,7 @@
       </div>
 
       <p class="text-black">
-        Un artítuclo escrito por:
+        Un artículo escrito por:
         <span
           v-html="$page.wordPressPost.author.name"
           class="prose prose-xl font-thin text-gray-700 mb-2"
