@@ -1,7 +1,7 @@
 <template>
   <div class="mx-auto w-full pb-4 lg:pb-0">
     <nav
-      class="fixed top-0 lg:relative bg-white lg:bg-transparent shadow-md lg:shadow-none z-50 w-full p-6"
+      class="fixed top-0 lg:relative bg-white lg:bg-transparent shadow-md lg:shadow-none z-50 w-full p-4 lg:p-6"
     >
       <div class="flex items-center justify-between">
         <div class="flex flex-col">
