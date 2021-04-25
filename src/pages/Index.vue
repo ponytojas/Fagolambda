@@ -102,6 +102,7 @@ export default {
     text-transform: uppercase;
 	background: linear-gradient(to right,#90D8CC 0%, #2196F3 100%);
 	-webkit-background-clip: text;
+  background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
