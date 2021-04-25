@@ -32,11 +32,13 @@ module.exports = {
     {
       use: "@gridsome/source-wordpress",
       options: {
-        baseUrl: process.env.WORDPRESS_URL, // required
-        typeName: "WordPress", // GraphQL schema name (Optional)
+        baseUrl: process.env.WORDPRESS_URL,
+        typeName: "WordPress",
+        perPage: 100,
+        concurrent: 10
       },
-      downloadRemoteImagesFromPosts: true, // default false
-      downloadRemoteFeaturedImages: true, // default false
+      downloadRemoteImagesFromPosts: true,
+      downloadRemoteFeaturedImages: false,
     },
     {
       use: "gridsome-plugin-tailwindcss",

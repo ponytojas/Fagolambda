@@ -1,11 +1,12 @@
 <template>
   <Layout>
-    <div class="side">
-      <p class="text-center text-6xl font-thin mt-8">
-        ¿<span class="font-normal">Q</span>ué es
-        <span class="font-normal">F</span>agolambda?
-      </p>
+    <p class="text-center text-4xl lg:text-6xl font-semibold mt-8 gradient-text-fago pb-4">
+      ¿Qué es Fagolambda?
+    </p>
 
+    <div
+      class="mx-auto px-4 flex flex-col justify-center content-center align-middle items-center mt-20 pb-10 lg:mt-10 w-full rounded-xl lg:w-8/12 border-0 lg:border shadow-none lg:shadow-xl"
+    >
       <div
         class="flex flex-col align-center items-center justify-center mt-4 px-6 md:px-32 py-4 h-auto"
       >
@@ -48,7 +49,7 @@
           </p>
         </div>
         <button
-          class="mt-12 shadow button-btn sm:text-lg xl:text-xl focus:outline-none text-white px-4 sm:px-4 xl:py-2 xl:px-4 rounded"
+          class="mt-12 shadow button-btn sm:text-lg xl:text-xl focus:outline-none text-white px-4 py-2 sm:px-4 xl:py-2 xl:px-4 rounded"
           type="button"
         >
           <g-link to="/">¡Visita Fagolambda!</g-link>
@@ -63,6 +64,13 @@ export default {};
 </script>
 
 <style>
+.gradient-text-fago {
+  text-transform: uppercase;
+  background: linear-gradient(to right, #ff6d70 20%, #6d287b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .side {
   color: #484855;
 }

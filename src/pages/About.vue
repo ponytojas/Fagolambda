@@ -1,12 +1,9 @@
 <template>
   <Layout>
-    <div class="side">
-      <p class="text-center text-6xl font-thin mt-8">
-        <span class="font-normal">S</span>obre
-        <span class="font-normal">m</span>i,
-        <span class="font-normal">L</span>orena
-      </p>
-
+     <p class="text-center text-4xl lg:text-6xl font-semibold mt-8 gradient-text-about pb-4">Sobre mi, Lorena</p>
+     <div
+      class="mx-auto px-4 flex flex-col justify-center content-center align-middle items-center mt-20 pb-10 lg:mt-10 w-full rounded-xl lg:w-8/12 border-0 lg:border shadow-none lg:shadow-xl"
+    >
       <div
         class="flex flex-col align-center items-center justify-center mt-8 mb-8 px-6 md:px-32 py-10 h-auto"
       >
@@ -28,8 +25,8 @@
             mis estudios en la Neurobiología.
           </p>
           <p>
-            Actualmente estoy realizando prácticas externas en un laboratorio
-            de neurobiología, en la Universidad de Alcalá, enfocado en la
+            Actualmente estoy realizando prácticas externas en un laboratorio de
+            neurobiología, en la Universidad de Alcalá, enfocado en la
             neurofisiología de la visión.
           </p>
           <p>
@@ -46,21 +43,21 @@
         </div>
         <div class="flex flex-row">
           <button
-          class="mt-12 mx-4 shadow button-btn sm:text-lg xl:text-xl focus:outline-none text-white py-3 px-4 sm:py-3 sm:px-4 xl:py-2 xl:px-4 rounded"
-          type="button"
-        >
-          <g-link to="~/assets/CV-Lorena-Biologia-min.pdf" target="_blank"
-            >Curriculum</g-link
+            class="mt-12 shadow button-btn sm:text-lg xl:text-xl focus:outline-none text-white px-4 py-2 sm:px-4 xl:py-2 xl:px-4 rounded mx-2"
+            type="button"
           >
-        </button>
-        <button
-          class="mt-12 mx-4 shadow button-btn sm:text-lg xl:text-xl focus:outline-none text-white py-3 px-4 sm:py-3 sm:px-4 xl:py-2 xl:px-4 rounded"
-          type="button"
-        >
-          <g-link to="mailto:me@fagolambda.com" target="_blank"
-            >Envíame un correo</g-link
+            <g-link to="~/assets/CV-Lorena-Biologia-min.pdf" target="_blank"
+              >Curriculum</g-link
+            >
+          </button>
+          <button
+            class="mt-12 shadow button-btn sm:text-lg xl:text-xl focus:outline-none text-white px-4 py-2 sm:px-4 xl:py-2 xl:px-4 rounded mx-2"
+            type="button"
           >
-        </button>
+            <g-link to="mailto:me@fagolambda.com" target="_blank"
+              >Envíame un correo</g-link
+            >
+          </button>
         </div>
       </div>
     </div>
@@ -72,6 +69,13 @@ export default {};
 </script>
 
 <style>
+.gradient-text-about {
+  text-transform: uppercase;
+  background: linear-gradient(to right, #FFDB30 10%, #E79723 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .side {
   color: #484855;
 }

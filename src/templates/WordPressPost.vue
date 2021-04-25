@@ -1,18 +1,20 @@
 <template>
   <Layout>
+    <div class="w-full flex flex-col mx-auto items-center w-full lg:w-8/12">
+      <p
+        class="text-center text-4xl lg:text-6xl font-semibold mt-8 gradient-text-articles-1 pb-4"
+        v-html="$page.wordPressPost.title"
+      />
+    </div>
     <div
-      class="flex flex-col align-center items-center justify-center md:mt-8 mb-8 px-6 md:px-32 py-10 md:py-24 h-auto"
+      class="mx-auto px-4 flex flex-col justify-center content-center align-middle items-center mt-20 pb-10 lg:mt-10 w-full rounded-xl lg:w-8/12 border-0 lg:border shadow-none lg:shadow-xl"
     >
-      <p class="text-6xl mb-2 font-thin WPtitle" v-html="this.articleTitle" />
-
-      <div v-if="$page.wordPressPost.acf.subtitle" class="square-brackets-quote">
-        <blockquote>
-          <p
-            v-html="$page.wordPressPost.acf.subtitle"
-            class="prose prose-lg font-thin text-gray-700 mb-2"
-          />
-        </blockquote>
-      </div>
+      <p
+        class="prose prose-green sm:prose lg:prose-lg xl:prose-2xl text-center font-thin mb-2 mt-10"
+        style="color: rgb(16, 185, 129)"
+        v-if="$page.wordPressPost.acf.subtitle"
+        v-html="$page.wordPressPost.acf.subtitle"
+      />
 
       <p class="text-black">
         Un artículo escrito por:
@@ -22,9 +24,12 @@
         />
       </p>
 
-       <p class="mt-5 italic text-black">
+      <p class="mt-5 italic text-black">
         Tiempo aprox. de lectura:
-        <span class="font-thin text-gray-700 " v-html="$page.wordPressPost.acf.timetoread"></span
+        <span
+          class="font-thin text-gray-700"
+          v-html="$page.wordPressPost.acf.timetoread"
+        ></span
         ><span class="font-thin text-gray-700"> minutos</span>
       </p>
 
@@ -94,21 +99,17 @@ export default {
       articleTitle: "",
     };
   },
-  beforeMount() {
-    let separateWord = this.$page.wordPressPost.title.toLowerCase().split(" ");
-    for (var i = 0; i < separateWord.length; i++) {
-      separateWord[i] =
-        separateWord[i]
-          .charAt(0)
-          .toUpperCase()
-          .bold() + separateWord[i].substring(1);
-    }
-    this.articleTitle = separateWord.join(" ");
-  },
 };
 </script>
 
 <style>
+.gradient-text-articles-1 {
+  text-transform: uppercase;
+  background: linear-gradient(to right, #813bf6 40%, #6d287b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 iframe {
   width: 100% !important;
 }

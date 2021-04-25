@@ -1,14 +1,16 @@
 <template>
   <Layout>
     <div class="side">
-      <p class="text-center text-6xl font-thin mt-8">
+      <p class="text-center text-4xl lg:text-6xl font-semibold mt-8 gradient-text-articles">
         {{ $page.wordPressCategory.title }}
       </p>
-      <div class="flex align-start flex-row flex-wrap mb-8">
-        <div
+      <div
+        class="flex flex-row w-full flex-wrap mt-4 justify-center content-center items-center"
+      >
+         <div
+          class="m-2 w-full lg:m-0 lg:w-4/12 z-0"
           v-for="{ node } in $page.wordPressCategory.belongsTo.edges"
           :key="node.id"
-          class=" w-full h-auto md:w-1/2 px-2"
         >
           <div class="flex justify-center flex-row">
             <g-link :to="node.path" class="flex justify-center flex-row">
