@@ -1,16 +1,24 @@
 <template>
   <Layout>
-    <div class="w-full flex flex-col mx-auto items-center w-full lg:w-8/12">
-      <p
-        class="text-center text-4xl lg:text-6xl font-semibold mt-8 gradient-text-articles-1 pb-4"
-        v-html="$page.wordPressPost.title"
-      />
-    </div>
+    <div class="w-full flex flex-col mx-auto items-center lg:w-7/12"></div>
+    <p
+      class="text-center text-4xl lg:text-6xl font-semibold mt-8 gradient-text-articles-1 pb-4"
+      v-html="$page.wordPressPost.title"
+    />
     <div
-      class="mx-auto px-4 flex flex-col justify-center content-center align-middle items-center mt-20 pb-10 lg:mt-10 w-full rounded-xl lg:w-8/12 border-0 lg:border shadow-none lg:shadow-xl"
+      class="mx-auto px-4 flex flex-col justify-center content-center align-middle items-center pb-10 w-full rounded-xl lg:w-6/12 border-0 lg:border shadow-none lg:shadow-xl"
     >
+      <g-image
+        v-if="$page.wordPressPost.featuredMedia"
+        :src="$page.wordPressPost.featuredMedia.sourceUrl"
+        :alt="$page.wordPressPost.featuredMedia.altText"
+        class="mb-10 rounded-xl"
+        width="2"
+        height="2"
+        fit="fill"
+      />
       <p
-        class="prose prose-green sm:prose lg:prose-lg xl:prose-2xl text-center font-thin mb-2 mt-10"
+        class="prose prose-xl prose-green sm:prose-lg lg:prose-xl xl:prose-2xl text-center font-normal mb-2 mt-10"
         style="color: rgb(16, 185, 129)"
         v-if="$page.wordPressPost.acf.subtitle"
         v-html="$page.wordPressPost.acf.subtitle"
@@ -33,15 +41,8 @@
         ><span class="font-thin text-gray-700"> minutos</span>
       </p>
 
-      <div class="mb-12"></div>
-      <g-image
-        v-if="$page.wordPressPost.featuredMedia"
-        :src="$page.wordPressPost.featuredMedia.sourceUrl"
-        :alt="$page.wordPressPost.featuredMedia.altText"
-        class="mb-20 w-3/4"
-      />
       <div
-        class="text-justify w-11/12 sm:w-full prose sm:prose lg:prose-lg xl:prose-xl WPcontent"
+        class="text-justify w-11/12 sm:w-full prose prose-lg lg:prose-xl WPcontent"
         v-html="$page.wordPressPost.content"
       />
       <template v-if="$page.wordPressPost.tags.length">
@@ -103,6 +104,7 @@ export default {
 </script>
 
 <style>
+
 .gradient-text-articles-1 {
   text-transform: uppercase;
   background: linear-gradient(to right, #813bf6 40%, #6d287b 100%);
@@ -122,48 +124,9 @@ iframe {
   background-color: #ffb300;
 }
 
-.blockquote-wrapper {
-  display: flex;
-  height: 100vh;
-  padding: 0 20px;
-}
-
-/* Blockquote main style */
-.blockquote {
-  position: relative;
-  font-weight: 800;
-  color: #ffffff;
-  width: 100%;
-  max-width: 500px;
-  z-index: 1;
-  align-self: center;
-  border-top: solid 1px;
-  border-bottom: solid 1px;
-}
-
 .WPcontent,
 .WPtitle {
   color: #484855 !important;
-}
-
-/* Blockquote header */
-.blockquote p {
-  position: relative;
-  color: #fff;
-  font-weight: 800;
-  line-height: 1;
-  margin: 0;
-}
-
-/* Blockquote right double quotes */
-.blockquote:after {
-  position: absolute;
-  content: "”";
-  color: #fff;
-  font-size: 10rem;
-  line-height: 0;
-  bottom: -43px;
-  right: 30px;
 }
 
 img {
@@ -175,43 +138,5 @@ img {
 
 /* increase header size after 600px */
 @media all and (min-width: 600px) {
-}
-</style>
-
-<style lang="scss" scoped>
-$bg: #ececec;
-.square-brackets-quote {
-  display: inline-block;
-  font-family: sans-serif;
-  margin: 1em;
-  max-width: 60em;
-  blockquote {
-    border: solid 0.5em #a75764;
-    display: inline-block;
-    margin: 0;
-    padding: 1em;
-    position: relative;
-    &:before {
-      background-color: $bg;
-      bottom: -1em;
-      content: "";
-      left: 2em;
-      position: absolute;
-      right: 2em;
-      top: -1em;
-    }
-    cite {
-      color: white;
-      display: block;
-      font-size: small;
-      font-style: normal;
-      text-align: right;
-      text-transform: uppercase;
-    }
-    > * {
-      position: relative;
-      z-index: 1;
-    }
-  }
 }
 </style>
