@@ -7,15 +7,7 @@
         <div class="flex flex-col">
           <g-link to="/">
             <div class="flex flex-row h-auto">
-              <g-image
-                src="../assets/fago_azul.png"
-                fit="inside"
-                width="52"
-                class="my-0"
-                quality="100"
-                blur="0"
-                alt="Logo de Fagolambda"
-              ></g-image>
+              <img src="../assets/fago_azul.png" width="52" height="52" alt="Logo de Fagolambda" />
               <span class="my-auto ml-4 text-3xl lg:text-4xl font-thin"
                 >Fagolambda</span
               >
