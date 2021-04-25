@@ -1,7 +1,7 @@
 <template>
   <div class="mx-auto w-full pb-4 lg:pb-0">
     <nav
-      class="fixed top-0 lg:relative bg-white lg:bg-transparent shadow-md lg:shadow-none z-50 w-full p-4 lg:p-6"
+      class="sticky top-0 lg:relative bg-white lg:bg-transparent shadow-md lg:shadow-none z-50 w-full px-4 p-0 lg:p-6"
     >
       <div class="flex items-center justify-between">
         <div class="flex flex-col">
@@ -104,7 +104,7 @@
         </transition>
       </div>
     </nav>
-    <main class="z-10 mt-48 mb-10 lg:mt-0 lg:pt-0">
+    <main class="z-10 mt-10 mb-10 lg:mt-0 lg:pt-0">
       <slot />
     </main>
     <svg
