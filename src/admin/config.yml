@@ -7,15 +7,18 @@ media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
 collections:
-  - name: "blog" 
-    label: "Blog" # Used in the UI
-    folder: "_posts/blog" # The path to the folder where the documents are stored
+  - name: "article" 
+    label: "Artículo" # Used in the UI
+    folder: "_posts/article" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "article"}
+      - {label: "Título", name: "title", widget: "string"}
+      - {label: "Fecha de publicación", name: "date", widget: "datetime"}
+      - {label: "Autor", name: "author", widget: "string"}
+      - {label: "Tiempo de lectura", name: "time-to-read", widget: "string"}
+      - {label: "Imagen de cabecera", name: "thumbnail", widget: "image"}
+      - {label: "Subtítulo", name: "subtitle", widget: "string"}
+      - {label: "Contenido", name: "body", widget: "markdown"}
+      - {label: "Etiquetas", name: "tags", widget: "list"}
