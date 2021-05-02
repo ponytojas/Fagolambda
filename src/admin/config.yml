@@ -16,9 +16,9 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "article"}
       - {label: "Título", name: "title", widget: "string"}
       - {label: "Fecha de publicación", name: "date", widget: "datetime"}
-      - {label: "Autor", name: "author", widget: "string"}
+      - {label: "Autor", name: "author", widget: "string", default: "Lorena Jiménez"}
       - {label: "Tiempo de lectura", name: "time-to-read", widget: "string"}
-      - {label: "Imagen de cabecera", name: "thumbnail", widget: "image"}
+      - {label: "Imagen de cabecera", name: "thumbnail", widget: "image", required: false}
       - {label: "Subtítulo", name: "subtitle", widget: "string"}
       - {label: "Contenido", name: "body", widget: "markdown"}
       - {label: "Etiquetas", name: "tags", widget: "list"}
