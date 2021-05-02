@@ -35,10 +35,13 @@ module.exports = {
         baseUrl: process.env.WORDPRESS_URL,
         typeName: "WordPress",
         perPage: 100,
-        concurrent: 10
+        concurrent: 10,
       },
       downloadRemoteImagesFromPosts: true,
       downloadRemoteFeaturedImages: false,
+    },
+    {
+      use: `gridsome-plugin-netlify-cms`,
     },
     {
       use: "gridsome-plugin-tailwindcss",
