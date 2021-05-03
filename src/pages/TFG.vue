@@ -15,7 +15,7 @@
       <div
         class="flex flex-row w-full flex-wrap mt-4 justify-center content-center items-center"
       >
-        <div
+        <!--div
           class="m-2 w-full lg:m-0 lg:w-4/12 z-0"
           v-for="{ node } in $page.allWordPressPost.edges"
           :key="node.id"
@@ -23,37 +23,13 @@
           <g-link :to="node.path" class="flex justify-center flex-row">
             <PostCard :post="node"></PostCard>
           </g-link>
-        </div>
+        </!--div-->
       </div>
     </div>
   </Layout>
 </template>
 
-<page-query>
-query Home {
-  allWordPressPost (filter: {categories: {id: {eq: "3"}}}){
-    edges {
-            node {
-        id
-        title
-        path
-        excerpt
-        acf {
-          subtitle
-          timetoread
-        }
-        categories{
-           title
-           id
-        }
-        tags{
-          title
-        }
-      }
-    }
-  }
-}
-</page-query>
+
 
 <script>
 import PostCard from "../components/PostCard";
