@@ -1,7 +1,7 @@
 <template>
   <div class="mx-auto w-full pb-4 lg:pb-0">
     <nav
-      class="sticky top-0 lg:relative bg-white lg:bg-transparent shadow-md lg:shadow-none z-50 w-full px-4 p-0 lg:p-6"
+      class="sticky top-0 lg:relative bg-white lg:bg-transparent shadow-md lg:shadow-none z-50 w-full px-4 p-0 py-2 lg:py-6 lg:p-6"
     >
       <div class="flex items-center justify-between">
         <div class="flex flex-col">
@@ -159,7 +159,7 @@ export default {
 }
 
 body {
-  font-family: "Open Sans";
+  font-family: 'Open Sans', sans-serif;
   background-color: #fafafa;
   background-color: #fafafa;
   opacity: 1;
