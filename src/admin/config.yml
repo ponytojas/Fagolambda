@@ -25,3 +25,18 @@ collections:
       - {label: "Contenido", name: "body", widget: "markdown"}
       - {label: "Etiquetas", name: "tags", widget: "list"}
       - {label: "youtube", name: "Video de YouTube", widget: string, required: false, default: "None" }
+
+  - name: "TFG" 
+    label: "TFG" # Used in the UI
+    folder: "_posts/TFG" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "article"}
+      - {label: "Título", name: "title", widget: "string"}
+      - {label: "Fecha de publicación", name: "date", widget: "datetime"}
+      - {label: "Fecha de actualización", name: "updatetime", widget: "datetime", required: false, default: ""}
+      - {label: "Actualización", name: "update", widget: "string", required: false, default: "None"}
+      - {label: "Autor", name: "author", widget: "string", default: "Lorena Jiménez"}
+      - {label: "Tiempo de lectura", name: "time-to-read", widget: "string"}
+      - {label: "Contenido", name: "body", widget: "markdown"}
