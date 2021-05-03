@@ -11,8 +11,8 @@ subtitle: Puede que alguna vez hayas fantaseado con la idea de un mundo
   post-apocalíptico con las ciudades destruidas y todo lleno de zombis, pero
   ¿Existen los zombis?
 tags:
-  - '["neurobiología"'
-  - '"Psicopatía"]'
+  - Neurobiología
+  - Psicopatía
 ---
 En este artículo trataremos el Síndrome de Cotard, un trastorno por el que la gente cree estar muerta.
 
