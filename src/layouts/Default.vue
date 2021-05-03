@@ -159,7 +159,7 @@ export default {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   background-color: #fafafa;
   background-color: #fafafa;
   opacity: 1;
