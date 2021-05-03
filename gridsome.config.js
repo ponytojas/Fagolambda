@@ -42,9 +42,35 @@ module.exports = {
     },
     {
       use: `gridsome-plugin-netlify-cms`,
+      options: {
+        publicPath: `/admin`,
+        modulePath: `src/admin/index.js`,
+      },
     },
     {
       use: "gridsome-plugin-tailwindcss",
     },
+    {
+      use: "@gridsome/source-filesystem",
+      options: {
+        path: "_posts/**/*.md",
+        typeName: "Articles",
+        remark: {
+          plugins: [
+            // ...local plugins
+          ],
+        },
+      },
+    },
   ],
+  transformers: {
+    remark: {
+      externalLinksTarget: "_blank",
+      externalLinksRel: ["nofollow", "noopener", "noreferrer"],
+      anchorClassName: "icon icon-link",
+      plugins: [
+        // ...global plugins
+      ],
+    },
+  },
 };

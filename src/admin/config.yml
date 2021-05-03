@@ -7,9 +7,9 @@ media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
 collections:
-  - name: "articles" 
+  - name: "Articles" 
     label: "Artículo" # Used in the UI
-    folder: "_posts/articles" # The path to the folder where the documents are stored
+    folder: "_posts/Articles" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
@@ -18,7 +18,7 @@ collections:
       - {label: "Fecha de publicación", name: "date", widget: "datetime"}
       - {label: "Autor", name: "author", widget: "string", default: "Lorena Jiménez"}
       - {label: "Tiempo de lectura", name: "time-to-read", widget: "string"}
-      - {label: "Imagen de cabecera", name: "thumbnail", widget: "image", required: false}
+      - {label: "Imagen de cabecera", name: "thumbnail", widget: "image", required: false, default: "/None"}
       - {label: "Subtítulo", name: "subtitle", widget: "string"}
       - {label: "Contenido", name: "body", widget: "markdown"}
       - {label: "Etiquetas", name: "tags", widget: "list"}
