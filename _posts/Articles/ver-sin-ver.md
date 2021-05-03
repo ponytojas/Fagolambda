@@ -11,7 +11,7 @@ subtitle: ¿Sabías que hay gente totalmente ciega que es capaz de sentir el mov
 tags:
   - Neurobiología
   - Visión
-Video de YouTube: https://youtu.be/GwGmWqX0MnM
+youtube: https://youtu.be/GwGmWqX0MnM
 ---
 El **Blindsight** o ceguera cortical es uno de tantos ejemplos que demuestran lo fascinante que puede llegar a ser el cerebro, pero para poder entender que es esto de poder ver objetos sin verlos realmente tenemos que conocer qué ocurre desde que vemos un objeto hasta que llega a la corteza visual de nuestro cerebro.
 

@@ -14,6 +14,7 @@ tags:
   - Biología
   - Biomedicina
   - Inteligencia artificial
+youtube: ""
 ---
 Una vez más, la **biología** y la **inteligencia artificial** se unen para producir algo único, para poder entender de que estamos hablando primero tenemos entender qué es una proteína: Una proteína es una estructura formada por aminoácidos y cumplen funciones muy diversas, como transportar el oxígeno a todo nuestro cuerpo, hacer que las reacciones sean más rápidas...
 

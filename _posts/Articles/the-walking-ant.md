@@ -13,7 +13,7 @@ tags:
   - Esporas
   - Hongos
   - Parasitología
-Video de YouTube: ""
+youtube: ""
 ---
 Las hormigas ***Camponotus leonardi*** viven en árboles tropicales y tienen un enemigo principal, el hongo ***ophiocordyceps***, capaz de entrar en su cerebro y controlarlas, esto suena a ciencia ficción así que vamos a ver cómo funciona: 
 
