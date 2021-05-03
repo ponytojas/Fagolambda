@@ -1,7 +1,11 @@
 <template>
   <Layout>
     <div class="h-auto w-full lg:w-8/12 mx-auto">
-     <p class="text-center text-4xl lg:text-6xl font-semibold mt-8 gradient-text-articles">Artículos</p>
+      <p
+        class="text-center text-4xl lg:text-6xl font-semibold mt-8 gradient-text-articles"
+      >
+        Artículos
+      </p>
       <div class="mt-8 flex flex-row content-center">
         <autocomplete
           class="w-11/12 sm:w-6/12 mx-auto"
@@ -17,11 +21,15 @@
       >
         <div
           class="m-2 w-full xl:m-0 xl:w-4/12 z-0"
-          v-for="{ node } in $page.allWordPressPost.edges"
-          :key="node.id"
+          v-for="article in $page.articles.edges"
+          :key="article.id"
         >
-          <g-link :to="node.path" class="flex flex-row w-full mx-auto">
-            <PostCard :post="node"></PostCard>
+          <g-link :to="article.node.path" class="flex flex-row w-full mx-auto">
+            <PostCard
+              :title="article.node.title"
+              :subtitle="article.node.subtitle"
+              :time_to_read="article.node.time_to_read"
+            ></PostCard>
           </g-link>
         </div>
       </div>
@@ -31,26 +39,14 @@
 
 <page-query>
 query Home {
-  allWordPressPost (filter: {categories: {id: {eq: "2"}}}){
+  articles: allArticles {
     edges {
       node {
         id
         title
         path
-        excerpt
-        acf {
-          subtitle
-          timetoread
-        }
-        categories{
-           title
-           id
-        }
-        tags{
-          id
-          title
-          slug
-        }
+        time_to_read
+        subtitle
       }
     }
   }
@@ -97,13 +93,12 @@ export default {
 };
 </script>
 <style>
-
 .gradient-text-articles {
-    text-transform: uppercase;
-	background: linear-gradient(to right,#90D8CC 0%, #2196F3 100%);
-	-webkit-background-clip: text;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #90d8cc 0%, #2196f3 100%);
+  -webkit-background-clip: text;
   background-clip: text;
-	-webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 .container {

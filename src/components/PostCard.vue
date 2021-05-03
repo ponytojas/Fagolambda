@@ -1,16 +1,21 @@
 <template>
-  <div class="flex flex-col h-80 p-6 bg-white border m-4 rounded-md card w-full">
-    <h2 class="text-2xl xl:text-xl font-bold text-gray-800" v-html="post.title" />
-    <div v-if="post.categories[0].id == '2'">
+  <div
+    class="flex flex-col h-80 p-6 bg-white border m-4 rounded-md card w-full"
+  >
+    <h2
+      class="text-2xl xl:text-xl font-bold text-gray-800"
+      v-html="title"
+    />
+    <div v-if="subtitle">
       <p
         class="text-gray-700 text-base whitespace-normal"
-        v-html="post.acf.subtitle"
+        v-html="subtitle"
       ></p>
     </div>
     <p class="italic font-thin mt-3">
       Tiempo aprox. de lectura:
       <span class="font-bold text-green-600"
-        ><span class="font-semibold" v-html="post.acf.timetoread"></span>
+        ><span class="font-semibold" v-html="time_to_read"></span>
         minutos</span
       >
     </p>
@@ -20,9 +25,17 @@
 <script>
 export default {
   props: {
-    post: {
-      type: Object,
+    title: {
+      type: String,
       required: true,
+    },
+    time_to_read: {
+      type: String,
+      required: true,
+    },
+    subtitle: {
+      type: String,
+      required: false,
     },
   },
 };
