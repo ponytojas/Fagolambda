@@ -113,11 +113,6 @@ export default {
       title: this.$page.article.title,
     };
   },
-  computed: {
-    betterTags: function () {
-      return this.$pages.article.tags;
-    },
-  },
 };
 </script>
 
