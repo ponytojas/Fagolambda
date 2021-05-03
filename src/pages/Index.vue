@@ -47,6 +47,7 @@ query Home {
         path
         time_to_read
         subtitle
+        tags
       }
     }
   }
@@ -68,15 +69,13 @@ export default {
       if (input.length < 1) {
         return [];
       }
-      return this.$page.allWordPressPost.edges
+      return this.$page.articles.edges
         .filter((article) => {
           return (
             article.node.title.toLowerCase().includes(input.toLowerCase()) ||
-            article.node.acf.subtitle
-              .toLowerCase()
-              .includes(input.toLowerCase()) ||
+            article.node.subtitle.toLowerCase().includes(input.toLowerCase()) ||
             article.node.tags.some((tag) =>
-              tag.slug.includes(input.toLowerCase())
+              tag.toLowerCase().includes(input.toLowerCase())
             )
           );
         })
@@ -84,7 +83,7 @@ export default {
     },
     handleSubmit(result) {
       let title = result.substring(result.indexOf(":") + 2);
-      let pathToArticle = this.$page.allWordPressPost.edges
+      let pathToArticle = this.$page.articles.edges
         .filter((el) => el.node.title == title)
         .map((el) => el.node.path)[0];
       this.$router.push(pathToArticle);
