@@ -12,54 +12,7 @@ subtitle: Hay cosas de la naturaleza y la evolución que parecen sacadas de una
   al mismísimo Geroge Lucas.
 tags:
   - "[“Parasitología”]"
-Video de YouTube:
-  url: https://youtu.be/yBCz73cwUvM
-  id: yBCz73cwUvM
-  mediaType: video
-  imageURL: https://img.youtube.com/vi/yBCz73cwUvM/maxresdefault.jpg
-  embedURL: //youtube.com/embed/yBCz73cwUvM
-  title: CARACOLES Zombies. No es CIENCIA FICCIÓN | National Geographic en Español
-  description: >-
-    Existe un parásito en Norteamérica y Europa denominado Leucochloridium
-    paradoxum. Cuando está dentro del cuerpo del caracol, trepa hacia sus
-    tentáculos. 
-
-
-    ➡ SUSCRÍBETE GRATIS: https://goo.gl/tnj75i
-
-
-    Los mejores videos y documentales de National Geographic en español: Animales, Ciencia, Tecnología y Viajes y los mejores momentos de los programas de más éxito de National Geographic Channel: Cosmos, Brain Games, Destination Wild, Megafactorías, Tabú... y mucho más!
-
-
-    Visita la web oficial de NATIONAL GEOGRAPHIC ESPAÑA para encontrar toda la información, videos, fotos y noticias de National Geographic.
-
-
-    * WEB OFICIAL: http://www.nationalgeographic.es 
-
-    * TWITTER: https://twitter.com/NatGeoEspana
-
-    * FACEBOOK:
-  publishedAt: 2017-12-19T19:00:04Z
-  tags:
-    - Caracoles zombies
-    - caracoles
-    - no es ciencia ficcion
-    - parásitos reales
-    - animales zombies en la vida real
-    - Leucochloridium paradoxum
-    - animales zombies reales
-    - national geographic
-    - national geographic en español
-    - en español
-    - zombies en la realidad
-    - natgeo
-    - documentales completos
-    - documentales national geographic en español
-    - videos de ciencia
-    - videos de viajes
-    - videos de animales
-    - documentales de animales
-    - nat geo
+Video de YouTube: https://youtu.be/yBCz73cwUvM
 ---
 El protagonista de este artículo no es ni mas ni menos que ***Leucochloridium Paradoxum***, un helminto. Para que nos entendamos, un helminto es, a grandes rasgos, un gusano.
 

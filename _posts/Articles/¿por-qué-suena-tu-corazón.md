@@ -13,19 +13,7 @@ tags:
   - "[“Corazón”"
   - “Fisiología”
   - ”Latidos”]
-Video de YouTube:
-  url: https://youtu.be/lsROH9l-2oQ
-  id: lsROH9l-2oQ
-  mediaType: video
-  imageURL: https://img.youtube.com/vi/lsROH9l-2oQ/maxresdefault.jpg
-  embedURL: //youtube.com/embed/lsROH9l-2oQ
-  title: Movimientos del corazon
-  description: " "
-  publishedAt: 2011-08-20T10:07:38Z
-  tags:
-    - Movimientos
-    - del
-    - corazon
+Video de YouTube: https://youtu.be/lsROH9l-2oQ
 ---
 \
 Después de haberle hecho esta pregunta a bastantes personas hay una respuesta que se repite: "El corazón late porque es el sonido que produce al contraerse y relajarse", pero, ¿Acaso el bíceps no se contrae y se relaja sin producir ruido? ¿Por qué el corazón sí lo hace?
