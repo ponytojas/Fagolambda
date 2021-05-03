@@ -2,6 +2,8 @@
 layout: article
 title: "AlphaFold 2: inteligencia artificial y biología trabajando juntos."
 date: 2021-05-03T16:39:28.123Z
+updatetime: ""
+update: None
 author: Lorena Jiménez
 time-to-read: "20 "
 thumbnail: /uploads/7036ee09-d792-451c-abfe-74dd517b5d85.webp
