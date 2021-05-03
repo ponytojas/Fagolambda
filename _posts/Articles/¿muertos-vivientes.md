@@ -4,7 +4,7 @@ title: ¿Muertos vivientes?
 date: 2021-05-03T10:36:04.456Z
 author: Lorena Jiménez
 time-to-read: "10"
-thumbnail: /images/uploads/frederic-koberl-cjgww0vr3d0-unsplash.jpeg
+thumbnail: ""
 subtitle: Puede que alguna vez hayas fantaseado con la idea de un mundo
   post-apocalíptico con las ciudades destruidas y todo lleno de zombis, pero
   ¿Existen los zombis?
