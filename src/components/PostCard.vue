@@ -1,8 +1,7 @@
 <template>
-  <div
-    class="flex flex-col h-80 p-6 bg-white border m-4 rounded-md card w-full"
-  >
-    <h2
+  <g-link :to="path" class="flex flex-col h-80 p-6 bg-white border m-4 rounded-md card w-full">
+    <div>
+      <h2
       class="text-2xl xl:text-xl font-bold text-gray-800"
       v-html="title"
     />
@@ -19,7 +18,8 @@
         minutos</span
       >
     </p>
-  </div>
+    </div>
+  </g-link>
 </template>
 
 <script>
@@ -37,6 +37,10 @@ export default {
       type: String,
       required: false,
     },
+    path: {
+      type: String,
+      required: true
+    }
   },
 };
 </script>

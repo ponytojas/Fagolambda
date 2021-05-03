@@ -8,7 +8,7 @@
       </p>
       <div class="mt-8 flex flex-row content-center">
         <autocomplete
-          class="w-11/12 sm:w-6/12 mx-auto"
+          class="w-11/12 sm:w-6/12 mx-auto shadow-none"
           :search="search"
           @submit="handleSubmit"
           placeholder="Busca un artículo"
@@ -24,13 +24,14 @@
           v-for="article in $page.articles.edges"
           :key="article.id"
         >
-          <g-link :to="article.node.path" class="flex flex-row w-full mx-auto">
+          <div class="flex flex-row w-full mx-auto">
             <PostCard
               :title="article.node.title"
               :subtitle="article.node.subtitle"
               :time_to_read="article.node.time_to_read"
+              :path="article.node.path"
             ></PostCard>
-          </g-link>
+          </div>
         </div>
       </div>
     </div>
@@ -123,5 +124,10 @@ export default {
 }
 .autocomplete-result {
   cursor: pointer;
+}
+
+.autocomplete-input:focus, .autocomplete-input[aria-expanded=true] {
+
+    box-shadow: 0 !important;
 }
 </style>
