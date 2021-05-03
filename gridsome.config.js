@@ -29,6 +29,7 @@ module.exports = {
   },
 
   plugins: [
+
     {
       use: `gridsome-plugin-netlify-cms`,
       options: {
@@ -45,6 +46,13 @@ module.exports = {
         typeName: "Articles",
       },
     },
+    {
+      use: "@gridsome/source-filesystem",
+      options: {
+        path: "_posts/TFG/*.md",
+        typeName: "TFG",
+      },
+    },
   ],
   transformers: {
     remark: {
@@ -58,6 +66,12 @@ module.exports = {
       {
         path: "/:title",
         component: "./src/templates/Articles.vue",
+      },
+    ],
+    TFG: [
+      {
+        path: "/:title",
+        component: "./src/templates/TFG.vue",
       },
     ],
   },

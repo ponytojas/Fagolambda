@@ -15,21 +15,36 @@
       <div
         class="flex flex-row w-full flex-wrap mt-4 justify-center content-center items-center"
       >
-        <!--div
+        <div
           class="m-2 w-full lg:m-0 lg:w-4/12 z-0"
-          v-for="{ node } in $page.allWordPressPost.edges"
-          :key="node.id"
+          v-for="tfg in $page.tfg.edges"
+          :key="tfg.id"
         >
-          <g-link :to="node.path" class="flex justify-center flex-row">
-            <PostCard :post="node"></PostCard>
-          </g-link>
-        </!--div-->
+           <PostCard
+              :title="tfg.node.title"
+              :time_to_read="tfg.node.time_to_read"
+              :path="tfg.node.path"
+            ></PostCard>
+        </div>
       </div>
     </div>
   </Layout>
 </template>
 
-
+<page-query>
+query TFG {
+  tfg: allTfg {
+    edges {
+      node {
+        id
+        title
+        path
+        time_to_read
+      }
+    }
+  }
+}
+</page-query>
 
 <script>
 import PostCard from "../components/PostCard";
