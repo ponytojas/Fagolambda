@@ -24,4 +24,4 @@ collections:
       - {label: "Subtítulo", name: "subtitle", widget: "string"}
       - {label: "Contenido", name: "body", widget: "markdown"}
       - {label: "Etiquetas", name: "tags", widget: "list"}
-      - {label: "youtube", name: "Video de YouTube", widget: youtube, required: false, extraInfo: false, APIkey: "AIzaSyC71DE3hRBw0vDYRmpf1yYHynDMPbjCHNY" }
+      - {label: "youtube", name: "Video de YouTube", widget: youtube, required: false, extraInfo: false }
