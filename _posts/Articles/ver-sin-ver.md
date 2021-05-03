@@ -9,8 +9,8 @@ time-to-read: "15"
 thumbnail: /uploads/6df89a8d-6abf-4ae6-b58a-180e5aa311db.webp
 subtitle: ¿Sabías que hay gente totalmente ciega que es capaz de sentir el movimiento?
 tags:
-  - "[“Neurobiología”"
-  - “Visión”]
+  - Neurobiología
+  - Visión
 Video de YouTube: https://youtu.be/GwGmWqX0MnM
 ---
 El **Blindsight** o ceguera cortical es uno de tantos ejemplos que demuestran lo fascinante que puede llegar a ser el cerebro, pero para poder entender que es esto de poder ver objetos sin verlos realmente tenemos que conocer qué ocurre desde que vemos un objeto hasta que llega a la corteza visual de nuestro cerebro.
