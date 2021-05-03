@@ -10,9 +10,9 @@ subtitle: " Todos somos conscientes de que nuestro corazón suena, y no solo por
   que nos lo haya dicho David Bisbal. Pero, ¿Qué es lo que hace que produzca ese
   sonido?"
 tags:
-  - "[“Corazón”"
-  - “Fisiología”
-  - ”Latidos”]
+  - Corazón
+  - Fisiología
+  - Latidos
 Video de YouTube: https://youtu.be/lsROH9l-2oQ
 ---
 \
