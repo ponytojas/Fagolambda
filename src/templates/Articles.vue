@@ -1,12 +1,12 @@
 <template>
   <Layout>
-    <div class="w-full flex flex-col mx-auto items-center lg:w-7/12"></div>
+    <div class="w-full flex flex-col mx-auto items-center lg:w-10/12 2xl:w-7/12"></div>
     <p
       class="text-center text-4xl lg:text-6xl font-semibold mt-8 gradient-text-articles-1 pb-4"
       v-html="$page.article.title"
     />
     <div
-      class="mx-auto flex flex-col justify-center content-center align-middle items-center pb-10 w-full rounded-xl lg:w-6/12 border-0 lg:border shadow-none lg:shadow-xl"
+      class="mx-auto flex flex-col justify-center content-center align-middle items-center pb-10 w-full rounded-xl 2xl:w-6/12 lg:w-11/12 border-0 2xl:border shadow-none 2xl:shadow-xl"
     >
       <g-image
         v-if="$page.article.thumbnail != '/None'"

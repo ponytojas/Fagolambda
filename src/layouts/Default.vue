@@ -16,7 +16,7 @@
         </div>
         <div class="flex flex-col">
           <div class="lg:hidden pt-4">
-            <button @click="showSideMenu = !showSideMenu" class="my-auto">
+            <button @click="showSideMenu = !showSideMenu" class="my-auto" aria-label="Abrir menú">
               <svg
                 fill="none"
                 stroke-linecap="round"
