@@ -44,6 +44,18 @@
         </p>
 
         <div
+          v-if="$page.article.update"
+          class="w-full h-auto text-gray-600 border-l-2 border-green-200 bg-gray-100 py-4 px-2 text-md text-left rounded-r-xl mb-10"
+        >
+         <div class="px-4 ">
+            <p>
+            <span class="text-lg mb-12">Actualización del artículo</span> <br />
+            <span v-html="$page.article.update"></span>
+          </p>
+         </div>
+        </div>
+
+        <div
           class="text-justify max-w-none w-full prose prose-lg lg:prose-xl content"
           v-html="$page.article.content"
         />
@@ -56,6 +68,7 @@
 query ($path: String!) {
   article: articles (path: $path) {
     id
+    update
     title
     author
     content
