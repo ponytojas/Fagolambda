@@ -42,6 +42,9 @@ module.exports = {
     },
     {
       use: `gridsome-plugin-netlify-cms`,
+      options: {
+        modulePath: `src/admin/index.js`,
+      },
     },
     {
       use: "gridsome-plugin-tailwindcss",
@@ -49,13 +52,8 @@ module.exports = {
     {
       use: "@gridsome/source-filesystem",
       options: {
-        path: "_posts/**/*.md",
+        path: "_posts/Articles/*.md",
         typeName: "Articles",
-        remark: {
-          plugins: [
-            // ...local plugins
-          ],
-        },
       },
     },
   ],
@@ -64,9 +62,14 @@ module.exports = {
       externalLinksTarget: "_blank",
       externalLinksRel: ["nofollow", "noopener", "noreferrer"],
       anchorClassName: "icon icon-link",
-      plugins: [
-        // ...global plugins
-      ],
     },
+  },
+  templates: {
+    Articles: [
+      {
+        path: "/:title",
+        component: "./src/templates/Articles.vue",
+      },
+    ],
   },
 };
