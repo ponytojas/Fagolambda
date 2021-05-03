@@ -70,7 +70,7 @@ module.exports = {
     ],
     TFG: [
       {
-        path: "/:title",
+        path: "/tfg/:title",
         component: "./src/templates/TFG.vue",
       },
     ],
