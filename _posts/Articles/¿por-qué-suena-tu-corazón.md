@@ -2,6 +2,7 @@
 layout: article
 title: ¿Por qué suena tu corazón?
 date: 2021-05-03T16:58:48.568Z
+updatetime: ""
 author: Lorena Jiménez
 time-to-read: "7"
 thumbnail: /uploads/9dd406f4-d6aa-4edf-83ad-4defce72b74a.webp
@@ -14,7 +15,7 @@ Después de haberle hecho esta pregunta a bastantes personas hay una respuesta q
 
 ![La imagen tiene un atributo ALT vacío; su nombre de archivo es giphy.gif](https://media.giphy.com/media/kaq6GnxDlJaBq/giphy.gif)
 
-Pues bien, el sonido que hace el corazón no se debe a las contracciones del , se debe a algo bastante más pequeño y que se encuentra dentro del propio corazón, las válvulas cardíacas.
+Pues bien, el sonido que hace el corazón no se debe a las contracciones del músculo, se debe a algo bastante más pequeño y que se encuentra dentro del propio corazón, las válvulas cardíacas.
 
 ![La imagen tiene un atributo ALT vacío; su nombre de archivo es giphy.gif](https://media.giphy.com/media/V0IdVIIW1y5d6/giphy.gif)
 
