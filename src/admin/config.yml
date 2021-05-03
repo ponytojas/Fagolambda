@@ -16,8 +16,8 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "article"}
       - {label: "Título", name: "title", widget: "string"}
       - {label: "Fecha de publicación", name: "date", widget: "datetime"}
-      - {label: "Fecha de actualización", name: "update", widget: "datetime", required: false}
-      - {label: "Actualización", name: "update", widget: "string", required: false}
+      - {label: "Fecha de actualización", name: "updatetime", widget: "datetime", required: false, default: ""}
+      - {label: "Actualización", name: "update", widget: "string", required: false, default: "None"}
       - {label: "Autor", name: "author", widget: "string", default: "Lorena Jiménez"}
       - {label: "Tiempo de lectura", name: "time-to-read", widget: "string"}
       - {label: "Imagen de cabecera", name: "thumbnail", widget: "image", required: false, default: "/None"}
