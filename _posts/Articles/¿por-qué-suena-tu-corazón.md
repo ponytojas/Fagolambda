@@ -2,10 +2,10 @@
 layout: article
 title: ¿Por qué suena tu corazón?
 date: 2021-05-03T16:58:48.568Z
+updatetime: ""
 author: Lorena Jiménez
 time-to-read: "7"
 thumbnail: /uploads/9dd406f4-d6aa-4edf-83ad-4defce72b74a.webp
-updatetime: ""
 subtitle: " Todos somos conscientes de que nuestro corazón suena, y no solo por
   que nos lo haya dicho David Bisbal. Pero, ¿Qué es lo que hace que produzca ese
   sonido?"
@@ -13,6 +13,19 @@ tags:
   - "[“Corazón”"
   - “Fisiología”
   - ”Latidos”]
+Video de YouTube:
+  url: https://youtu.be/lsROH9l-2oQ
+  id: lsROH9l-2oQ
+  mediaType: video
+  imageURL: https://img.youtube.com/vi/lsROH9l-2oQ/maxresdefault.jpg
+  embedURL: //youtube.com/embed/lsROH9l-2oQ
+  title: Movimientos del corazon
+  description: " "
+  publishedAt: 2011-08-20T10:07:38Z
+  tags:
+    - Movimientos
+    - del
+    - corazon
 ---
 \
 Después de haberle hecho esta pregunta a bastantes personas hay una respuesta que se repite: "El corazón late porque es el sonido que produce al contraerse y relajarse", pero, ¿Acaso el bíceps no se contrae y se relaja sin producir ruido? ¿Por qué el corazón sí lo hace?
