@@ -11,7 +11,7 @@ subtitle: Hay cosas de la naturaleza y la evolución que parecen sacadas de una
   película de ficción y hoy vamos a ver un caso que dejaría sin palabras hasta
   al mismísimo Geroge Lucas.
 tags:
-  - "[“Parasitología”]"
+  - Parasitología
 Video de YouTube: https://youtu.be/yBCz73cwUvM
 ---
 El protagonista de este artículo no es ni mas ni menos que ***Leucochloridium Paradoxum***, un helminto. Para que nos entendamos, un helminto es, a grandes rasgos, un gusano.
