@@ -12,7 +12,7 @@ subtitle: Hay cosas de la naturaleza y la evolución que parecen sacadas de una
   al mismísimo Geroge Lucas.
 tags:
   - Parasitología
-youtube: https://youtu.be/yBCz73cwUvM
+youtube: https://www.youtube.com/embed/yBCz73cwUvM
 ---
 El protagonista de este artículo no es ni mas ni menos que ***Leucochloridium Paradoxum***, un helminto. Para que nos entendamos, un helminto es, a grandes rasgos, un gusano.
 

@@ -13,7 +13,7 @@ tags:
   - Corazón
   - Fisiología
   - Latidos
-youtube: https://youtu.be/lsROH9l-2oQ
+youtube: https://www.youtube.com/embed/lsROH9l-2oQ
 ---
 \
 Después de haberle hecho esta pregunta a bastantes personas hay una respuesta que se repite: "El corazón late porque es el sonido que produce al contraerse y relajarse", pero, ¿Acaso el bíceps no se contrae y se relaja sin producir ruido? ¿Por qué el corazón sí lo hace?
