@@ -10,10 +10,10 @@ thumbnail: /uploads/7036ee09-d792-451c-abfe-74dd517b5d85.webp
 subtitle: Una vez más la biología ya la inteligencia artificial se dan la mano
   para revolucionar la biomedicina.
 tags:
-  - "[“AlphaFold”"
-  - “Biología”
-  - “Biomedicina”
-  - “Inteligencia artificial”]
+  - AlphaFold
+  - Biología
+  - Biomedicina
+  - Inteligencia artificial
 ---
 Una vez más, la **biología** y la **inteligencia artificial** se unen para producir algo único, para poder entender de que estamos hablando primero tenemos entender qué es una proteína: Una proteína es una estructura formada por aminoácidos y cumplen funciones muy diversas, como transportar el oxígeno a todo nuestro cuerpo, hacer que las reacciones sean más rápidas...
 
