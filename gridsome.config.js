@@ -61,7 +61,7 @@ module.exports = {
         component: "./src/templates/Articles.vue",
       },
     ],
-    TFG: [
+    tfg: [
       {
         path: "/tfg/:title",
         component: "./src/templates/TFG.vue",
