@@ -76,11 +76,6 @@ query ($path: String!) {
 
 <script>
 export default {
-  metaInfo() {
-    return {
-      title: this.$page.article.title,
-    };
-  },
 };
 </script>
 
