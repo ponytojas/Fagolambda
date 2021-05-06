@@ -42,8 +42,8 @@ module.exports = {
     {
       use: "@gridsome/source-filesystem",
       options: {
-        path: "_posts/tfg/*.md",
-        typeName: "tfg",
+        path: "_posts/TFG/*.md",
+        typeName: "TFG",
       },
     },
   ],
