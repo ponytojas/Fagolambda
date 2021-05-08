@@ -24,7 +24,7 @@ Las proteínas tienen cuatro niveles estructurales: 
 
 **Estructura primaria:** Se trata de una secuencia de aminoácidos , como si se tratase de un collar de perlas, es decir, las perlas serían los aminoácidos y la proteína sería el collar estirado.
 
-![](https://fagolambda-436fc1.ingress-baronn.easywp.com/wp-content/uploads/2021/02/54804E02-0FD4-4D39-84DA-4F92324FB746.jpeg)
+![Imagen decorativa. Estructura primaria de aminoacidos](https://fagolambda-436fc1.ingress-baronn.easywp.com/wp-content/uploads/2021/02/54804E02-0FD4-4D39-84DA-4F92324FB746.jpeg)
 
 Estructura primaria
 
@@ -34,19 +34,19 @@ Estructura primaria
 
 \-Hélice: Como indica su nombre se enrolla como un cable de teléfono
 
-![](https://fagolambda-436fc1.ingress-baronn.easywp.com/wp-content/uploads/2021/02/047D4936-8C7F-4896-9DD7-1FB4428F518D.gif)
+![Imagen decorativa. Helice de ADN](https://fagolambda-436fc1.ingress-baronn.easywp.com/wp-content/uploads/2021/02/047D4936-8C7F-4896-9DD7-1FB4428F518D.gif)
 
 Estructura secundaria
 
 **Estructura terciaria**: La proteína que ya tiene estructura secundaria pliega sobre si misma, como si enrollamos ovillo de lana. Cuando las proteínas adquieren estas estructuras se vuelven funcionales
 
-![](https://fagolambda-436fc1.ingress-baronn.easywp.com/wp-content/uploads/2021/02/99CA2E21-44BC-4965-BBBC-8A1927E88ABD.jpeg)
+![""](https://fagolambda-436fc1.ingress-baronn.easywp.com/wp-content/uploads/2021/02/99CA2E21-44BC-4965-BBBC-8A1927E88ABD.jpeg)
 
 Estructura terciaria
 
 **Estructura cuaternaria:** Se produce cuando 2 o mas proteínas con estructura terciaria se unen entre ellas.
 
-![](https://fagolambda-436fc1.ingress-baronn.easywp.com/wp-content/uploads/2021/02/9758F361-D3D1-409B-9E3A-16644597F70C-1024x1024.jpeg)
+![""](https://fagolambda-436fc1.ingress-baronn.easywp.com/wp-content/uploads/2021/02/9758F361-D3D1-409B-9E3A-16644597F70C-1024x1024.jpeg)
 
 ¿POR QUÉ ES ESTO IMPORTANTE?
 
@@ -54,13 +54,13 @@ Cuando una proteína adquiere su **estructura terciaria** se vuelve, como hemos 
 
 Como ya podemos deducir, conocer cómo se pliegan las proteínas y qué estructura adquieren es muy importante, sobre todo en biomedicina, para poder conocer el funcionamiento o algunos factores que influyen en enfermedades como por ejemplo la diabetes tipo 2 o el Alzheimer.
 
-![](https://fagolambda-436fc1.ingress-baronn.easywp.com/wp-content/uploads/2021/02/212A96A1-3744-4ACF-9A75-59D520CB33AD.jpeg)
+![""](https://fagolambda-436fc1.ingress-baronn.easywp.com/wp-content/uploads/2021/02/212A96A1-3744-4ACF-9A75-59D520CB33AD.jpeg)
 
 Hasta ahora, cuando queríamos saber qué forma tenía una proteína y cómo se plegaba había que hacer experimentos que eran muy difíciles y requerían mucho tiempo, como por ejemplo la cristalografía de rayos X, estamos hablando de muchos meses para saber, y no a ciencia cierta, cual es la estructura terciaria de alguna proteína. 
 
 Muy bien, pues aquí es donde entra la **inteligencia artificia**l: Durante varios años se ha estado realizando una competición bienal en la que participan muchas empresas para poder resolver este problema, es decir, para poder saber cómo se pliega una proteína con mucha precisión y muy rápido.
 
-![](https://media.giphy.com/media/gpXfKa9xLAR56/giphy.gif)
+![""](https://media.giphy.com/media/gpXfKa9xLAR56/giphy.gif)
 
 Cada dos años se celebra la competición **CASP**, en la que se propone a los participantes presentar modelos que solucionen el problema del plegamiento de proteínas. 
 
@@ -72,7 +72,7 @@ Se trata de una empresa que forma parte de **Alphabet**, empresa matriz de **Goo
 
 Entonces, ¿Qué es AlphaFold? Se trata de un sistema de **redes neuronales** que es capaz de producir la estructura tridimensional (estructura terciaria y cuaternaria) de una proteína. Tiene un nivel de acierto del **92,4%**, una tasa mucho más elevada que el resto de competidores e incluso más alta que AlphaFold 1 (que se presentó la edición anterior).
 
-![](https://media.giphy.com/media/5VKbvrjxpVJCM/giphy.gif)
+![""](https://media.giphy.com/media/5VKbvrjxpVJCM/giphy.gif)
 
 Lo más curioso de todo es cómo han logrado que esto sea posible: 
 
@@ -82,7 +82,7 @@ Esta matriz tendrá como columnas y filas cada uno de los aminoácidos de la cad
 
 Después, el interior de la matriz se rellena con las distancias existentes entre el aminoácido colocado en la fila con los de la columna. Se forma entonces una diagonal de distancia cero (ya que la distancia de un aminoácido a si mismo es cero), y una zona cercana a esta diagonal con distancias muy pequeñas, ya que son los aminoácidos que están unidos directamente.
 
-![](https://fagolambda-436fc1.ingress-baronn.easywp.com/wp-content/uploads/2021/02/D0988EA6-805C-4499-9C0E-C73A5BFE3C5E.jpeg)
+![""](https://fagolambda-436fc1.ingress-baronn.easywp.com/wp-content/uploads/2021/02/D0988EA6-805C-4499-9C0E-C73A5BFE3C5E.jpeg)
 
 Matriz de AlphaFold 2
 
@@ -94,7 +94,7 @@ La red neuronal utiliza **algoritmos de optimización** (algoritmos de gradiente
 
 Una vez tenemos la matriz y tenemos los ángulos que se van a dar durante el plegamiento de la proteína podemos obtener el modelo de la estructura terciaria. En la siguiente imagen comparamos los resultados obtenidos por AlphaFold 2 y los obtenidos con los métodos actuales:
 
-![](https://fagolambda-436fc1.ingress-baronn.easywp.com/wp-content/uploads/2021/02/5224AE8D-A70D-4EBC-AE84-6FEC286C186B-1024x576.gif)
+![""](https://fagolambda-436fc1.ingress-baronn.easywp.com/wp-content/uploads/2021/02/5224AE8D-A70D-4EBC-AE84-6FEC286C186B-1024x576.gif)
 
 En definitiva, AlphaFold 2 ha supuesto una revolución en el año 2020, posiblemente haya solucionado uno de los problemas que lleva siendo durante mucho tiempo un quebradero de cabeza para los biólogos, experimentos que duran meses y son muy costosos pueden ser sustituidos por un programa de ordenador que realiza esta tarea con más de un 90% de fiabilidad. 
 
