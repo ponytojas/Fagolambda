@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   repo: ponytojas/Fagolambda
-  branch: stagging 
+  branch: main 
 publish_mode: editorial_workflow
 media_folder: "static/uploads"
 public_folder: "/uploads"
