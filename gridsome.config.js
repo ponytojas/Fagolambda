@@ -14,12 +14,6 @@ module.exports = {
       precomposed: true,
     },
   },
-  templates: {
-    WordPressCategory: "/category/:slug", // adds a route for the "category" post type (Optional)
-    WordPressPost: "/:slug", // adds a route for the "post" post type (Optional)
-    WordPressPostTag: "/tag/:slug", // adds a route for the "post_tag" post type (Optional)
-  },
-
   css: {
     loaderOptions: {
       postcss: {
@@ -27,19 +21,51 @@ module.exports = {
       },
     },
   },
-
   plugins: [
+
     {
-      use: "@gridsome/source-wordpress",
+      use: `gridsome-plugin-netlify-cms`,
       options: {
-        baseUrl: process.env.WORDPRESS_URL, // required
-        typeName: "WordPress", // GraphQL schema name (Optional)
+        modulePath: `src/admin/index.js`,
       },
-      downloadRemoteImagesFromPosts: true, // default false
-      downloadRemoteFeaturedImages: true, // default false
     },
     {
       use: "gridsome-plugin-tailwindcss",
     },
+    {
+      use: "@gridsome/source-filesystem",
+      options: {
+        path: "_posts/Articles/*.md",
+        typeName: "Articles",
+      },
+    },
+    {
+      use: "@gridsome/source-filesystem",
+      options: {
+        path: "_posts/TFG/*.md",
+        typeName: "TFG",
+      },
+    },
   ],
+  transformers: {
+    remark: {
+      externalLinksTarget: "_blank",
+      externalLinksRel: ["nofollow", "noopener", "noreferrer"],
+      anchorClassName: "icon icon-link",
+    },
+  },
+  templates: {
+    Articles: [
+      {
+        path: "/:title",
+        component: "./src/templates/Articles.vue",
+      },
+    ],
+    TFG: [
+      {
+        path: "/tfg/:title",
+        component: "./src/templates/TFG.vue",
+      },
+    ],
+  },
 };

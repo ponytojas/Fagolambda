@@ -1,33 +1,46 @@
 <template>
-  <div
-    class="w-10/12 sm:w-10/12 md:w-full lg:w-8/12 my-5 h-auto rounded overflow-hidden card"
-  >
-    <div class="px-6 py-8">
-      <div class="text-2xl font-semibold mb-2">
-        <h2 v-html="post.title" />
-      </div>
-      <div v-if="post.categories[0].id == '2'">
-        <p
-          class="text-gray-700 text-base whitespace-normal"
-          v-html="post.acf.subtitle"
-        ></p>
-      </div>
-      <p class="mt-5 italic">
-        Tiempo aprox. de lectura:
-        <span class="font-semibold" v-html="post.acf.timetoread"></span
-        ><span class="font-semibold"> minutos</span>
-      </p>
+  <g-link :to="path" class="flex flex-col h-80 p-6 bg-white border m-4 rounded-md card w-full">
+    <div>
+      <h2
+      class="text-2xl xl:text-xl font-bold text-gray-800"
+      v-html="title"
+    />
+    <div v-if="subtitle">
+      <p
+        class="text-gray-700 text-base whitespace-normal"
+        v-html="subtitle"
+      ></p>
     </div>
-  </div>
+    <p class="italic font-thin mt-3">
+      Tiempo aprox. de lectura:
+      <span class="font-bold text-green-600"
+        ><span class="font-semibold" v-html="time_to_read"></span>
+        minutos</span
+      >
+    </p>
+    </div>
+  </g-link>
 </template>
 
 <script>
 export default {
   props: {
-    post: {
-      type: Object,
+    title: {
+      type: String,
       required: true,
     },
+    time_to_read: {
+      type: String,
+      required: true,
+    },
+    subtitle: {
+      type: String,
+      required: false,
+    },
+    path: {
+      type: String,
+      required: true
+    }
   },
 };
 </script>
