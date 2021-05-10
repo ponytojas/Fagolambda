@@ -45,7 +45,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://ponytojas.dev/_nuxt/img/fagolambda.a1979c3.png)
+![Product Name Screen Shot](https://ponytojas.dev/_nuxt/img/fagolambda.a1979c3.png)
 
 Science is not something for a few, knowledge must be shared.
 
