@@ -3,7 +3,7 @@ layout: article
 title: The walking ant
 date: 2021-05-03T17:39:47.399Z
 updatetime: ""
-update: None
+update: ""
 author: Lorena Jiménez
 time-to-read: "10"
 thumbnail: /uploads/02f1b262-8c71-4b02-9117-12e23eee29ba.webp
