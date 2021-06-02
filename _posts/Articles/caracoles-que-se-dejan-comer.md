@@ -3,7 +3,7 @@ layout: article
 title: Caracoles que se dejan comer
 date: 2021-05-03T17:25:03.874Z
 updatetime: ""
-update: None
+update: ""
 author: Lorena Jiménez
 time-to-read: "5"
 thumbnail: /uploads/4223715a-baa6-4bf9-b810-1d421347c1db.webp
