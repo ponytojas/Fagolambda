@@ -3,7 +3,7 @@ layout: article
 title: Ver sin ver
 date: 2021-05-03T17:32:30.160Z
 updatetime: ""
-update: None
+update: ""
 author: Lorena Jiménez
 time-to-read: "15"
 thumbnail: /uploads/6df89a8d-6abf-4ae6-b58a-180e5aa311db.webp
