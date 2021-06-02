@@ -8,7 +8,7 @@
       </p>
       <div class="mt-8 flex flex-row content-center">
         <autocomplete
-          class="w-11/12 sm:w-6/12 mx-auto shadow-none"
+          class="w-11/12 sm:w-6/12 md:w-8/12 xl:w-6/12 mx-auto shadow-none"
           :search="search"
           @submit="handleSubmit"
           placeholder="Busca un artículo"
@@ -20,7 +20,7 @@
         class="flex flex-row w-full flex-wrap mt-4 justify-center content-center items-center"
       >
         <div
-          class="m-2 w-full xl:m-0 xl:w-4/12 z-0"
+          class="flex space-x-0 space-y-4 w-full md:w-5/12 xl:w-4/12 z-0"
           v-for="article in $page.articles.edges"
           :key="article.id"
         >
