@@ -46,7 +46,7 @@
         </p>
 
         <div
-          v-if="$page.article.update != 'None'"
+          v-if="$page.article.update != ''"
           class="w-full h-auto text-gray-600 border-l-2 border-green-200 bg-gray-100 py-4 px-2 text-md text-left rounded-r-xl mb-10"
         >
           <div class="px-4">
