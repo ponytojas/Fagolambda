@@ -3,7 +3,7 @@ layout: article
 title: ¿Muertos vivientes?
 date: 2021-05-03T10:36:04.456Z
 updatetime: ""
-update: None
+update: ""
 author: Lorena Jiménez
 time-to-read: "10"
 thumbnail: /uploads/frederic-koberl-cjgww0vr3d0-unsplash.jpeg
