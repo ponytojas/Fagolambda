@@ -15,8 +15,8 @@
     "gridsome-plugin-netlify-cms": "^1.0.9",
     "netlify-cms": "^2.10.118",
     "netlify-cms-widget-youtube": "^0.3.1",
-    "node-sass": "^6.0.1",
-    "sass-loader": "^12.1.0"
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.1.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss7-compat": "^2.2.7",
